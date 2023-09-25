@@ -40,13 +40,18 @@ We choosed to use a predefined layout for the sccs files [SCSS Playbook](https:/
    
     - Virginie & Tom for the homepage
     - Justin & Justine for the ''caddy''
+  
+Team caddy already coding, good job !!!
 
- ### end of the day report 1 :
+ ### end of the day 1 report :
 
  Globally good start from the team, it's difficult to manage all the tasks and know where to start, maybe, for the first day, it would be more convenient to do it in "presentiel".
  
- - We found that using Trello is mandatory for tasks management, so we do.
+ - We found that using **Trello** is mandatory for tasks management, so we do.
+ - First, we decided to use tailwind, but it wasn't recommended by the coach for this project, so --> Sass.
+    - By the way, Justine Provide us a really useful script to install Tailwind 👼
  - Issue with the SCSS files directory --> some problems with the typo in certains folders.
+ - It appears that the forked repo that I provided to the team is a little messy... [SCSS Playbook](https://github.com/tomboszko/Project-ScssPlaybook.git) it say ''Simplified strucuture'' obviously... 😲
 
 to be continued...
 
