@@ -11,11 +11,12 @@
 
 ### first meeting :
 
-We choosed to detremine together the main style of the project such as :
+We choosed to determine together the main style of the project such as :
 
 - Name : **Keller's Burgers**
-- global style : [See Figma](https://www.figma.com/file/iYWZR7I01XC9GETLZ01uhy/Dark-Kitchen?type=design&node-id=0%3A1&mode=design&t=22kkSpGakcKgHGt3-1)
-- color theme:
-- 
+- type of food : Burgers.
+- global style : [See Figma](https://www.figma.com/file/iYWZR7I01XC9GETLZ01uhy/Dark-Kitchen?type=design&node-id=0%3A1&mode=design&t=24Se2trkJHKn1hFd-1)
+
+We had a lot of discussion to choose main theme and to choose features of the page.
  
 
