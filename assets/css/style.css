@@ -2982,4 +2982,41 @@ footer {
   background: #00a1de;
   color: white;
   padding: 2em;
+}
+.cart {
+  background-color: rgb(233, 228, 222);
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90vh;
+  border-radius: 25px 25px 0px 0px;
+}
+.cart .cart-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+.cart .cart-title h2 {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart .cart-title button {
+  border: none;
+  border-radius: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 10px;
+  box-shadow: 0px 0px 2px 0px rgb(161, 161, 161);
+}
+.cart .cart-title button:hover {
+  background-color: rgb(231, 231, 231);
 }/*# sourceMappingURL=style.css.map */
