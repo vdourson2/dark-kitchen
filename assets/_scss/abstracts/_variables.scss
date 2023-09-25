@@ -1,16 +1,15 @@
-// Fonts
 
+// Fonts modified by Tom
 
-// Font Sizing
-$baseFontSize      : 16px;
-$baseLineHeight    : 1.5;
-$headingLineHeight : 1.2;
+$roboto:"roboto";
+$poppins:"poppins";
 
 // Colors modified by Tom
-$blackquick: #2f2f2f;
-$whitequick:#f4f4f4;
-$greyquick: #cbcbcb;
-$redquick:#c8102e;
+
+$quickwhite:#f4f4f4;
+$quickgrey: #cbcbcb;
+$quickred:#c8102e;
+$quickblack: #2f2f2f;
 
 // Spacing
 $pad: 1em;
@@ -18,3 +17,8 @@ $pad: 1em;
 // Breakpoints
 $smallBreakpoint : 600px;
 $largeBreakpoint : 1080px;
+
+// Font Sizing
+$baseFontSize      : 16px;
+$baseLineHeight    : 1.5;
+$headingLineHeight : 1.2;

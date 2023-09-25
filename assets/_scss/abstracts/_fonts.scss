@@ -1,3 +1,4 @@
 ///// Font Imports /////
-@include font-face("Open Sans", "../fonts/open-sans/OpenSans-Regular", normal, $file-formats: ttf);
-@include font-face("Open Sans", "../fonts/open-sans/OpenSans-Regular", normal, italic, $file-formats: ttf);
+
+@include font-face("poppins", "../fonts/Poppins",normal, $file-formats: ttf);
+@include font-face("roboto", "../fonts/Roboto",normal, $file-formats: ttf);
