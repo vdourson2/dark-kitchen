@@ -3109,7 +3109,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-height: 60vh;
+  height: 60vh;
   overflow-y: scroll;
 }
 .cart-list p {
@@ -3166,4 +3166,8 @@ footer {
   border: none;
   color: white;
   font-size: 20px;
+}
+
+.cart-list::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
