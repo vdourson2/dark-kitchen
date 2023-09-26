@@ -1,4 +1,0 @@
-
-
-
-burgers.sort(fish1);

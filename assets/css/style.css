@@ -2930,26 +2930,6 @@ This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
 to layouts.
 */
-.header {
-  width: 375px;
-  height: 375px;
-  background-image: url("/assets/images/Header_keller.jpeg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: auto;
-  padding-right: auto;
-  text-align: center;
-  font-family: "roboto";
-  color: #f4f4f4;
-}
-.header .header__title {
-  margin-top: 12px;
-}
-
 .category {
   width: 375px;
   display: flex;
@@ -2960,34 +2940,37 @@ to layouts.
   background-color: #f4f4f4;
 }
 
-#category__list {
-  list-style: none;
-  display: inline-flex;
-  position: relative;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 0;
-  margin-top: 5px;
-}
-
 .category__title {
   font-family: "roboto";
   font-size: 12px;
   margin-top: 5px;
-  margin-bottom: 5px;
+  align-items: center;
+}
+
+#category__list {
+  list-style: none;
+  display: inline-flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 0;
 }
 
 .category__list__item {
   background: #c8102e;
   color: #f4f4f4;
-  width: 65px;
-  height: 25px;
+  width: 70px;
+  height: 30px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   font-family: "poppins";
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 900;
-  padding: 4px;
+  padding: 5px;
   border-radius: 5px;
-  border-color: #f4f4f4;
-  border-width: 1px;
+  box-shadow: 3px 4px 11px -4px rgb(0, 0, 0);
+  -webkit-box-shadow: 3px 4px 11px -4px rgb(0, 0, 0);
+  -moz-box-shadow: 3px 4px 11px -4px rgb(0, 0, 0);
 }/*# sourceMappingURL=style.css.map */
