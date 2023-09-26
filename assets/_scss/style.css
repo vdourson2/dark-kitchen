@@ -2931,6 +2931,21 @@ Files inside this folder should contain all styles relating
 to layouts.
 */
 .header {
-  background-image: url("https://th.bing.com/th/id/OIG.kzV0ANvCTEAFFs5m3FTp?pid=ImgGn");
+  width: 375px;
+  height: 375px;
+  background-image: url("/assets/images/Header_keller.jpeg");
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+  font-family: "roboto";
+  color: #f4f4f4;
+}
+.header .header__title {
+  margin-top: 12px;
 }/*# sourceMappingURL=style.css.map */
