@@ -2930,18 +2930,39 @@ This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
 to layouts.
 */
-.container_header {
+.header {
   width: 375px;
-  height: 375px;
+  height: 200px;
+  background-color: #2f2f2f;
+  position: sticky;
+}
+
+.header_main {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 2px;
-  background-image: url("/assets/images/Header_keller.jpeg");
-  background-size: cover;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_title {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   font-family: "roboto";
   color: #f4f4f4;
+}
+
+.logo_burger {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.container_text {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "poppins";
+  color: #f4f4f4;
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */
