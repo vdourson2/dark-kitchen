@@ -20,10 +20,10 @@ let veggie2 = new Burger("veggie", "Vegan Cheese","./images/burger_veggie2.jpeg"
 let veggie3 = new Burger("veggie", "Paprika Crispy","./images/burger_veggie3.jpeg", "Crispy burger with veggie steak and paprika", 12);
 let veggie4 = new Burger("veggie", "Falafel Burger","./images/burger_veggie4.jpeg", "Burger with falafel and pickels, tomato and salad", 12);
 
-let chicken1 = new Burger("chicken", "Chicken & Veggies", "../images/burger_chicken3.jpeg", "Chicken with veggies of all sorts, cucumbers, tomatoes, eggplant and salad", 20);
-let chicken2 = new Burger("chicken", "Chicken Filet", "../images/burger_chicken1.jpeg", "Soft bread, pepper mayonnaise, salad, onions and a delicious crusty chicken filet", 20);
-let chicken3 = new Burger("chicken", "Triple Chicken", "../images/burger_chicken4.jpeg", "A triple layer of chicken separated by layers of cheddar and salad", 20);
-let chicken4 = new Burger("chicken", "Nugget Burger", "../images/burger_chicken2.jpeg", "Pieces of chicken nuggets with salad and onions", 20);
+let chicken1 = new Burger("chicken", "Chicken & Veggies", "../assets/images/burger_chicken3.jpeg", "Chicken with veggies of all sorts, cucumbers, tomatoes, eggplant and salad", 20);
+let chicken2 = new Burger("chicken", "Chicken Filet", "../assets/images/burger_chicken1.jpeg", "Soft bread, pepper mayonnaise, salad, onions and a delicious crusty chicken filet", 20);
+let chicken3 = new Burger("chicken", "Triple Chicken", "../assets/images/burger_chicken4.jpeg", "A triple layer of chicken separated by layers of cheddar and salad", 20);
+let chicken4 = new Burger("chicken", "Nugget Burger", "../assets/images/burger_chicken2.jpeg", "Pieces of chicken nuggets with salad and onions", 20);
 
 let beef1 = new Burger("beef", "Big Tom", "..\assets\images\burger_beef1.jpeg", "the original big tom burgers with his secret sauce", 8.99);
 
