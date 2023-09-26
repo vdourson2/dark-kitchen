@@ -2930,6 +2930,10 @@ This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
 to layouts.
 */
+body {
+  background-color: #cbcbcb;
+}
+
 .cards {
   width: 90vw;
   margin: auto;
@@ -2941,7 +2945,14 @@ to layouts.
 
 .cards__wrapBurger {
   width: 40vw;
+  background-color: #2f2f2f;
+  color: #f4f4f4;
+  box-shadow: 5px 5px 10px 2px #cbcbcb;
+  border-radius: 10px;
 }
 .cards__wrapBurger__illustration {
   width: 90px;
+}
+.cards__wrapBurger__burgerName {
+  font-family: "roboto";
 }/*# sourceMappingURL=style.css.map */

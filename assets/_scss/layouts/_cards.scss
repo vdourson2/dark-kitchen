@@ -1,3 +1,7 @@
+
+body{
+    background-color: $quickgrey;
+}
 .cards {
     width:90vw;
     margin : auto;
@@ -9,7 +13,27 @@
 
 .cards__wrapBurger{
     width:40vw;
+    background-color: $quickblack;
+    color:$quickwhite;
+    box-shadow: 5px 5px 10px 2px $quickgrey;
+    border-radius: 10px;
     &__illustration {
         width:90px;
+    }
+    &__burgerName {
+        font-family: $roboto;
+        // color:$quickwhite;
+    }
+    &__description {
+        // color:$quickwhite;
+
+    }
+    &__wrapPrice {
+        &__price{
+            // color:$quickwhite
+        }
+        &__add {
+
+        }
     }
 }

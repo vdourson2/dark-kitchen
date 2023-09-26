@@ -1,4 +1,8 @@
+let selectedBurgers = [];
 
+function addCart(e,burger) {
+    selectedBurgers.push(burger);
+}
 
 let cards = document.querySelector(".cards");
 for (let burger of burgers) {
@@ -12,6 +16,6 @@ for (let burger of burgers) {
                                 <p class="cards__wrapBurger__wrapPrice__price">${burger.price}<span class="cards__wrapBurger__wrapPrice__price__euro"> €</span></p>
                                 <div class="cards__wrapBurger__wrapPrice__add"> + </div>
                             </div>`;
-
-
+    let add = wrapBurger.querySelector(".cards__wrapBurger__wrapPrice__add");
+    add.addEventListener('click', (e) => addCart(e,burger));
 }
