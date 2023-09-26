@@ -9,17 +9,39 @@
 }  
 
 
-.category__list {
+#category__list {
 
     list-style:none ;
     display: inline-flex;
     position: relative;
     justify-content:space-around;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 5px;
+    
 }
 
 .category__title {
-
+    font-family: $roboto;
     margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.category__list__item {
+
+    background:$quickred;
+    color:$quickwhite;
+    width: 65px;
+    height: 25px;
+    text-align: center;
+    font-family: $poppins;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 4px;
+    border-radius: 5px;
+    border-color: $quickwhite;
+    border-width: 1px;
 
 }
 
