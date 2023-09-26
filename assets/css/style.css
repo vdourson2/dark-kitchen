@@ -67,12 +67,6 @@ html {
 }
 
 /* makes the font 33% larger relative to the icon container */
-.fa-lg {
-  font-size: 1.3333333333em;
-  line-height: 0.75em;
-  vertical-align: -15%;
-}
-
 .fa-2x {
   font-size: 2em;
 }
@@ -87,68 +81,6 @@ html {
 
 .fa-5x {
   font-size: 5em;
-}
-
-.fa-fw {
-  width: 1.2857142857em;
-  text-align: center;
-}
-
-.fa-ul {
-  padding-left: 0;
-  margin-left: 2.1428571429em;
-  list-style-type: none;
-}
-.fa-ul > li {
-  position: relative;
-}
-
-.fa-li {
-  position: absolute;
-  left: -2.1428571429em;
-  width: 2.1428571429em;
-  top: 0.1428571429em;
-  text-align: center;
-}
-.fa-li.fa-lg {
-  left: -1.8571428571em;
-}
-
-.fa-border {
-  padding: 0.2em 0.25em 0.15em;
-  border: solid 0.08em #eee;
-  border-radius: 0.1em;
-}
-
-.fa-pull-left {
-  float: left;
-}
-
-.fa-pull-right {
-  float: right;
-}
-
-.fa.fa-pull-left {
-  margin-right: 0.3em;
-}
-.fa.fa-pull-right {
-  margin-left: 0.3em;
-}
-
-/* Deprecated as of 4.4.0 */
-.pull-right {
-  float: right;
-}
-
-.pull-left {
-  float: left;
-}
-
-.fa.pull-left {
-  margin-right: 0.3em;
-}
-.fa.pull-right {
-  margin-left: 0.3em;
 }
 
 .fa-spin {
@@ -221,10 +153,6 @@ html {
 
 .fa-stack-2x {
   font-size: 2em;
-}
-
-.fa-inverse {
-  color: #fff;
 }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
@@ -2902,6 +2830,60 @@ the project.
 /*
 This file can be used to overwrite any normailze settings.
 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 html,
 body {
   margin: 0;
@@ -2929,4 +2911,306 @@ to a reusable component.
 This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
 to layouts.
-*//*# sourceMappingURL=style.css.map */
+*/
+.header {
+  width: 375px;
+  height: 375px;
+  background-image: url("/assets/images/Header_keller.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+  font-family: "roboto";
+  color: #f4f4f4;
+}
+.header .header__title {
+  margin-top: 12px;
+}
+
+.cart {
+  background-color: rgb(233, 228, 222);
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90vh;
+  border-radius: 25px 25px 0px 0px;
+  visibility: hidden;
+}
+.cart .cart-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+.cart .cart-title h2 {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart .cart-title button {
+  border: none;
+  border-radius: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 10px;
+  box-shadow: 0px 0px 2px 0px rgb(161, 161, 161);
+}
+.cart .cart-title button:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.total {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.total .total-total {
+  font-size: medium;
+}
+.total .total-price {
+  font-weight: bold;
+}
+
+.button-checkout-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-checkout-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsla(0, 0%, 0%, 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button-checkout-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(to left, hsl(340, 100%, 16%) 0%, hsl(340, 100%, 32%) 8%, hsl(340, 100%, 32%) 92%, hsl(340, 100%, 16%) 100%);
+}
+
+.button-checkout-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345, 100%, 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button-checkout-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-checkout-pushable:hover .button-checkout-front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-checkout-pushable:active .button-checkout-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-checkout-pushable:hover .button-checkout-shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-checkout-pushable:active .button-checkout-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-checkout-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.container-shopping-cart {
+  margin-left: 80%;
+}
+
+.notif-shopping-cart {
+  border: 1px solid black;
+  color: white;
+  background-color: #111;
+  filter: opacity(0.8);
+  border-radius: 25px;
+  text-align: center;
+  font-size: 10px;
+  z-index: 0;
+  width: 15px;
+  margin-left: 65%;
+}
+
+.notif-shopping-cart:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.shopping-cart-img {
+  height: 25px;
+  width: 25px;
+  filter: brightness(2);
+}
+
+.shopping-cart {
+  position: fixed;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  z-index: -1;
+  border-radius: 10px;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 20px;
+  padding-left: 2%;
+  padding-right: 2.5%;
+}
+
+.shopping-cart:before {
+  content: "";
+  background: linear-gradient(45deg, #c8102e, white);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -2;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.shopping-cart:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+  right: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.cards {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10vw;
+}
+
+.cards__wrapBurger {
+  width: 40vw;
+  color: #2f2f2f;
+  box-shadow: 5px 5px 10px 2px #cbcbcb;
+  border-radius: 10px;
+}
+.cards__wrapBurger__black {
+  width: 100%;
+  height: 85px;
+  background-color: #2f2f2f;
+  border-radius: 10px 10px 0 0;
+}
+.cards__wrapBurger__illustration {
+  display: block;
+  width: 90px;
+  margin: -50px auto 0px auto;
+  border-radius: 10px;
+}
+.cards__wrapBurger__white {
+  padding: 20px 10px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards__wrapBurger__burgerName {
+  font-family: "roboto";
+  font-size: 20px;
+  font-weight: bold;
+}
+.cards__wrapBurger__description {
+  font-family: "poppins";
+}
+.cards__wrapBurger__wrapPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards__wrapBurger__wrapPrice__price {
+  font-family: "poppins";
+  font-weight: bold;
+}
+.cards__wrapBurger__wrapPrice__add {
+  background-color: #c8102e;
+  color: #f4f4f4;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  width: 24px;
+  border-radius: 12px;
+}
+.cards__wrapBurger__wrapPrice__add:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
