@@ -1,1 +1,27 @@
-  
+.category {
+    width: 375px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $quickwhite;
+}  
+
+
+.category__list {
+
+    list-style:none ;
+    display: inline-flex;
+    position: relative;
+    justify-content:space-around;
+}
+
+.category__title {
+
+    margin-top: 5px;
+
+}
+
+
+
