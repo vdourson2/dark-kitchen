@@ -2,7 +2,10 @@
 .container-shopping-cart{
 
 margin-left: 80%;
-// visibility: hidden;
+// z-index: 3;
+position: fixed;
+bottom: 0;
+// // visibility: hidden;
 
 }
 
@@ -14,8 +17,8 @@ margin-left: 80%;
     filter: opacity(0.8);
     border-radius: 25px;
    text-align: center;
-   font-size: 10px;
-   z-index: 5;
+   font-size: 10px; 
+   z-index: 10;
    width: 15px;
    margin-left: 65%; 
 
@@ -35,7 +38,7 @@ margin-left: 80%;
 
     height: 25px;
     width: 25px;
-    filter: brightness(2);
+    // filter: brightness(2);
     
     
   
@@ -43,14 +46,15 @@ margin-left: 80%;
 
  .shopping-cart{
 
-    position: fixed;
+    // position: fixed;
+    bottom: 0;
     padding: 0.6em 2em;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
-  background: #111;
+  background: red;
   cursor: pointer;
-  z-index: 4;
+  z-index: 0;
   border-radius: 10px;
   user-select: none;
   -webkit-user-select: none;
@@ -73,7 +77,7 @@ margin-left: 80%;
   top: -2px;
   left: -2px;
   background-size: 400%;
-  z-index: 2;
+  z-index: 1;
   filter: blur(5px);
   -webkit-filter: blur(5px);
   width: calc(100% + 4px);
@@ -84,12 +88,12 @@ margin-left: 80%;
  }
  
  .shopping-cart:after {
-    z-index: 3;
+    z-index: 2;
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: red;
+    background: white;
     right: 0;
     top: 0;
     border-radius: 10px;

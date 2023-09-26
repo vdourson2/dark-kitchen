@@ -2973,6 +2973,8 @@ to layouts.
 
 .container-shopping-cart {
   margin-left: 80%;
+  position: fixed;
+  bottom: 0;
 }
 
 .notif-shopping-cart {
@@ -2983,7 +2985,7 @@ to layouts.
   border-radius: 25px;
   text-align: center;
   font-size: 10px;
-  z-index: 5;
+  z-index: 10;
   width: 15px;
   margin-left: 65%;
 }
@@ -2998,18 +3000,17 @@ to layouts.
 .shopping-cart-img {
   height: 25px;
   width: 25px;
-  filter: brightness(2);
 }
 
 .shopping-cart {
-  position: fixed;
+  bottom: 0;
   padding: 0.6em 2em;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
-  background: #111;
+  background: red;
   cursor: pointer;
-  z-index: 4;
+  z-index: 0;
   border-radius: 10px;
   -moz-user-select: none;
        user-select: none;
@@ -3027,7 +3028,7 @@ to layouts.
   top: -2px;
   left: -2px;
   background-size: 400%;
-  z-index: 2;
+  z-index: 1;
   filter: blur(5px);
   -webkit-filter: blur(5px);
   width: calc(100% + 4px);
@@ -3038,12 +3039,12 @@ to layouts.
 }
 
 .shopping-cart:after {
-  z-index: 3;
+  z-index: 2;
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: red;
+  background: white;
   right: 0;
   top: 0;
   border-radius: 10px;
