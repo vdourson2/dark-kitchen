@@ -51,5 +51,10 @@
     
 }
 
+.category__list__item:hover { /* IE 9 */ /* Safari 3-8 */
+    transform: scale(1.05);
+  }
+  
+
 
 
