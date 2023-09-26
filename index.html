@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark kitchen</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script defer src=""></script>
+    <script defer src="assets/script/burgerClass.js"></script>
+    <script defer src="assets/script/cards.js"></script>
+    <script defer src="assets/script/main.js"></script>
     <script src="assets/script/shoppingCart.js"> </script>
 </head>
 <body>
@@ -31,33 +33,17 @@
     <!-- Cards -->
     <main class="cards">
 
-        <!-- Insert dynamically : -->
+        <!-- Insert dynamically :
             <div class="cards__wrapBurger">
                 <img class="card__illustration" src="" alt="Burger picture">
                 <h2 class="card__burgerName"></h2>
                 <p class="card__description"></p>
                 <p class="card__price"></p>
-            </div>
-    </main> 
+            </div> -->
+    </main>    
+
+
     
-    <div class="container-shopping-cart">
-
-
-         <div class="notif-shopping-cart">
-         
-            1
-        
-         </div>
-
-         <button onclick="openCart()" class="shopping-cart">
-
-            <img class="shopping-cart-img" src="assets/images/panier1.png" 
-            alt="shoppingcart">
-
-         </button>
-
-    </div>
-
 
     <!-- Cart -->
 
@@ -67,7 +53,7 @@
 
           <h2> My cart </h2>
 
-          <button onclick="closeCart()" > X </button>
+          <button>X</button>
 
         </div>
 
@@ -84,23 +70,24 @@
 
             <div class="total">
 
-                <p class="total-total"> Total </p>
-                <p  class="total-price"> €9.49 </p>
-                 
+                <p> Total </p>
+                <p> 9.49€ </p>
+                
             </div>
 
-            <button class="button-checkout-pushable" role="button">
-                <span class="button-checkout-shadow"></span>
-                <span class="button-checkout-edge"></span>
-                <span class="button-checkout-front text">
-                  Checkout
-                </span>
-              </button>
+            <button> Checkout </button>
+
 
         </div>
+           
+        
 
     </section>
 
+
+
+
+    
 </body>
 
 
