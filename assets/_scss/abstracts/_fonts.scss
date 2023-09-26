@@ -1,4 +1,11 @@
-///// Font Imports /////
 
-@include font-face("poppins", "../fonts/Poppins",normal, $file-formats: ttf);
-@include font-face("roboto", "../fonts/Roboto",normal, $file-formats: ttf);
+
+@font-face {
+    font-family: "roboto";
+    src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("/assets/fonts/Poppins/Poppins-Regular.ttf");
+}
