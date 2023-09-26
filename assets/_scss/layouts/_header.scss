@@ -1,23 +1,17 @@
 
-.header {
+.container_header {
     width: 375px;
     height: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2px;
     background: {
         image:url("/assets/images/Header_keller.jpeg");
         size: cover;
     }
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
     
     margin: {
-        left:auto;
-        right: auto;
-    }
-
-    padding: {
         left:auto;
         right: auto;
     }
@@ -25,9 +19,6 @@
     text-align: center;
     font-family: $roboto;
     color: $quickwhite;
-
-    .header__title {
-        margin-top: 12px;
-    }
     
 }
+
