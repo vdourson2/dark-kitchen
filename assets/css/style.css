@@ -2920,6 +2920,7 @@ footer {
   right: 0;
   height: 90vh;
   border-radius: 25px 25px 0px 0px;
+  visibility: hidden;
 }
 .cart .cart-title {
   display: flex;

@@ -6,6 +6,7 @@
     <title>Dark kitchen</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src=""></script>
+    <script src="assets/script/shoppingCart.js"> </script>
 </head>
 <body>
     <!-- header -->
@@ -30,13 +31,13 @@
     <!-- Cards -->
     <main class="cards">
 
-        <!-- Insert dynamically :
+        <!-- Insert dynamically : -->
             <div class="cards__wrapBurger">
                 <img class="card__illustration" src="" alt="Burger picture">
                 <h2 class="card__burgerName"></h2>
                 <p class="card__description"></p>
                 <p class="card__price"></p>
-            </div> -->
+            </div>
     </main> 
     
     <div class="container-shopping-cart">
@@ -48,7 +49,7 @@
         
          </div>
 
-         <button class="shopping-cart">
+         <button onclick="openCart()" class="shopping-cart">
 
             <img class="shopping-cart-img" src="assets/images/panier1.png" 
             alt="shoppingcart">
@@ -59,14 +60,14 @@
 
 
     <!-- Cart -->
-<!-- 
+
     <section class="cart">
 
         <div class="cart-title">
 
           <h2> My cart </h2>
 
-          <button>X</button>
+          <button onclick="closeCart()" > X </button>
 
         </div>
 
@@ -98,7 +99,7 @@
 
         </div>
 
-    </section> -->
+    </section>
 
 </body>
 
