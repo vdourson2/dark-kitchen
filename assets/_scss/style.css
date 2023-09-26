@@ -2929,4 +2929,8 @@ to a reusable component.
 This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
 to layouts.
-*//*# sourceMappingURL=style.css.map */
+*/
+.header {
+  background-image: url("https://th.bing.com/th/id/OIG.kzV0ANvCTEAFFs5m3FTp?pid=ImgGn");
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
