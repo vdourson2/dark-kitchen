@@ -11,7 +11,7 @@ function addElementToCart(e)
     let burger = e;
     if (cartList.some(row => row.includes(burger)))
     {
-        updateCart(burger)
+        updateCart(burger, 1);
         return;
     }
 
@@ -56,6 +56,7 @@ function addCartCard(element)
     removeButton.classList.add("cart-removeButton");
     let removeText = document.createTextNode("-");
     removeButton.appendChild(removeText);
+    removeButton.addEventListener('click', function(){ updateCart(element, -1) });
 
     let itemNumber = document.createElement("div");
     button.appendChild(itemNumber);
@@ -68,26 +69,50 @@ function addCartCard(element)
     addButton.classList.add("cart-addButton");
     let addText = document.createTextNode("+");
     addButton.appendChild(addText);
+    addButton.addEventListener('click', function(){ updateCart(element, 1) });
 }
 
 // Function to update already existing cards
-function updateCart(burger)
+function updateCart(burger, x)
 {
     let cardIndex = cartList.findIndex(row => row.includes(burger));
     let cardToModify = cartList[cardIndex][2];
     let lastNum = cartList[cardIndex][1];
+    console.log(cartList);
+
+    console.log(lastNum);
+    if (lastNum == 1 && x == -1)
+    {
+        console.log("less than 1 object: remove");
+        cardToModify.remove();
+        cartList.splice(cardIndex, 1);
+        //selectedBurgers.findIndex(burger);
+        //selectedBurgers.splice();
+        console.log(cartList);
+        return;
+    }
+
+    if (lastNum == 99 && x == 1)
+    {
+        console.log("no more than 99");
+        alert("99 burger? Really? That's more than enough don't you think?");
+        return;
+    }
+
     let lastPrice = cartList[cardIndex][3];
     let priceForOne = burger.price;
     let numToModify = cardToModify.querySelector(".cart-itemNumber");
     let priceToModify = cardToModify.querySelector("p");
-    numToModify.childNodes[0].nodeValue = lastNum + 1;
-    cartList[cardIndex][1] += 1;
-    priceToModify.childNodes[0].nodeValue = "€" + (lastPrice + priceForOne);
-    cartList[cardIndex][3] += priceForOne;
+    numToModify.childNodes[0].nodeValue = lastNum + x;
+    cartList[cardIndex][1] += x;
+    priceToModify.childNodes[0].nodeValue = "€" + (lastPrice + (priceForOne * x));
+    cartList[cardIndex][3] += priceForOne * x;
 }
 
 addElementToCart(chicken1);
 addElementToCart(chicken2);
-// addElementToCart(chicken1);
-// addElementToCart(chicken2);
-// addElementToCart(chicken1);
+addElementToCart(chicken1);
+addElementToCart(chicken2);
+addElementToCart(chicken1);
+
+updateCart(chicken1, 90);
