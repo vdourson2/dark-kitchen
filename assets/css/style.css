@@ -3066,4 +3066,24 @@ to layouts.
 }
 .cards__wrapBurger__wrapPrice__add:hover {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards {
+    gap: 6vw;
+  }
+  .cards__wrapBurger {
+    width: 26vw;
+  }
+  .cards__wrapBurger__white {
+    padding: 20px 25px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cards {
+    gap: 1vw;
+  }
+  .cards__wrapBurger {
+    width: 21vw;
+  }
 }/*# sourceMappingURL=style.css.map */
