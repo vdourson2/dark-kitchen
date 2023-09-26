@@ -5,7 +5,7 @@ burgers.sort((a, b) => (a.category > b.category) ? 1 : -1);
 let burgerCards = document.querySelector(".cards");
 
 // select list
-const categoryItems = document.querySelectorAll(".category__list__item");
+let categoryItems = document.querySelectorAll(".category__list__item");
 
 // show category
 function displayBurgersByCategory(category) {
@@ -16,14 +16,16 @@ function displayBurgersByCategory(category) {
         burgers.forEach(burger => displayBurgerCard(burger));
     } else {
         // show cat.
-        const filteredBurgers = burgers.filter(burger => burger.category === category);
+        let filteredBurgers = burgers.filter(burger => burger.category === category);
         filteredBurgers.forEach(burger => displayBurgerCard(burger));
     }
 }
 
 // show burger cards
 function displayBurgerCard(burger) {
-    const wrapBurger = document.createElement("div");
+    let wrapBurger = document.createElement("div");
+
+    //code from virginie 
     wrapBurger.classList.add("cards__wrapBurger");
     burgerCards.appendChild(wrapBurger);
     wrapBurger.innerHTML = `<img class="cards__wrapBurger__illustration" src="${burger.illustration}" alt="Burger picture">
@@ -33,9 +35,12 @@ function displayBurgerCard(burger) {
                                 <p class="cards__wrapBurger__wrapPrice__price">${burger.price}<span class="cards__wrapBurger__wrapPrice__price__euro"> €</span></p>
                                 <div class="cards__wrapBurger__wrapPrice__add"> + </div>
                             </div>`;
-    const add = wrapBurger.querySelector(".cards__wrapBurger__wrapPrice__add");
+    let add = wrapBurger.querySelector(".cards__wrapBurger__wrapPrice__add");
     add.addEventListener('click', (e) => addCart(e, burger));
-}
+} 
+//code from virgine
+
+
 
 // event listener
 categoryItems.forEach(item => {
