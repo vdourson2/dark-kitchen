@@ -1,8 +1,9 @@
 let cartCardsContainer = document.querySelector(".cart-list");
+let totalPrice = document.querySelector(".total-price");
+let totalItems = document.querySelector(".list-num");
 let cartList = [];
-//let testArr = [chicken1, chicken2, chicken3, chicken4, chicken1];
-//let burgerToAdd = selectedBurgers;
-//let burgerToAdd = [chicken1, chicken2, chicken3, chicken4, chicken1];
+let total = 0;
+let numItems = 0;
 
 // function to add card to cart
 function addElementToCart(e)
@@ -17,6 +18,8 @@ function addElementToCart(e)
 
     cartList.push([burger, 1]);
     addCartCard(burger);
+    updateTotal(burger.price);
+    updateItemsNum(1);
 }
 
 // function to create a new card in cart
@@ -42,7 +45,7 @@ function addCartCard(element)
     let itemPriceText = document.createTextNode("€" + element.price);
     itemPrice.appendChild(itemPriceText);
 
-    // create card item quantity modify button
+    // create the quantity modify button
     let elementIndex = cartList.findIndex(row => row.includes(element));
     cartList[elementIndex][2] = card;
     cartList[elementIndex][3] = element.price;
@@ -78,9 +81,8 @@ function updateCart(burger, x)
     let cardIndex = cartList.findIndex(row => row.includes(burger));
     let cardToModify = cartList[cardIndex][2];
     let lastNum = cartList[cardIndex][1];
-    console.log(cartList);
 
-    console.log(lastNum);
+    // Check that the quantity is between 1 and 99
     if (lastNum == 1 && x == -1)
     {
         console.log("less than 1 object: remove");
@@ -88,7 +90,7 @@ function updateCart(burger, x)
         cartList.splice(cardIndex, 1);
         //selectedBurgers.findIndex(burger);
         //selectedBurgers.splice();
-        console.log(cartList);
+        updateTotal(burger.price * x)
         return;
     }
 
@@ -99,6 +101,7 @@ function updateCart(burger, x)
         return;
     }
 
+    // Update card price and quantity
     let lastPrice = cartList[cardIndex][3];
     let priceForOne = burger.price;
     let numToModify = cardToModify.querySelector(".cart-itemNumber");
@@ -107,6 +110,23 @@ function updateCart(burger, x)
     cartList[cardIndex][1] += x;
     priceToModify.childNodes[0].nodeValue = "€" + (lastPrice + (priceForOne * x));
     cartList[cardIndex][3] += priceForOne * x;
+
+    updateTotal(burger.price * x);
+    updateItemsNum(x);
+}
+
+// Function to call each time an element is added or deleted to update the total
+function updateTotal(price)
+{
+    total += price;
+    totalPrice.childNodes[0].nodeValue = "€" + total.toFixed(2);
+}
+
+// Function to call each time an element is added or deleted to update the number of items total
+function updateItemsNum(x)
+{
+    numItems += x;
+    totalItems.childNodes[0].nodeValue = numItems + " items";
 }
 
 addElementToCart(chicken1);
@@ -114,5 +134,7 @@ addElementToCart(chicken2);
 addElementToCart(chicken1);
 addElementToCart(chicken2);
 addElementToCart(chicken1);
+addElementToCart(chicken3);
+addElementToCart(chicken4);
 
-updateCart(chicken1, 90);
+//updateCart(chicken1, 90);
