@@ -10,10 +10,10 @@ class Burger
     }
 }
 
-let fish1 = new Burger("fish", "Marine Marvel Burger", "assets/images/burger_fish3.jpeg", "Breaded white fish fillet, topped with crispy lettuce, fresh tomatoes, homemade tartar sauce, and slices of avocado, all served on a brioche burger bun", 12.99);
-let fish2 = new Burger("fish", "Spicy Oceanic Delight", "assets/images/burger_fish2.jpeg", "Grilled spicy fish fillet, accompanied by sautéed kale, marinated jalapeño peppers, melted pepper jack cheese, and creamy sriracha sauce, served on a sesame seed bun", 11.99);
-let fish3 = new Burger("fish", "Land and Sea Fusion Burger", "assets/images/burger_fish4.jpeg", "A combination of grilled shrimp and fish fillet, featuring seaweed salad, marinated cucumber, wasabi mayonnaise, and pickled ginger, all served in a fresh bun", 10.99);
-let fish4 = new Burger("fish", "Tropical Breeze Burger", "assets/images/burger_fish1.jpeg", "Grilled fish fillet with a tropical twist, including two slices of fish, fresh mango, coconut lettuce, and exotic citrus sauce, all wrapped in a fresh burger bun", 13.99);
+let fish1 = new Burger("fish", "Marine Marvel Burger", "assets/images/burger_fish3.jpeg", "Breaded white fish fillet, crispy lettuce, tomatoes, tartar sauce", 12.99);
+let fish2 = new Burger("fish", "Spicy Oceanic Delight", "assets/images/burger_fish2.jpeg", "Grilled spicy fish fillet, sautéed kale, jalapeño peppers, cheese, sriracha sauce", 11.99);
+let fish3 = new Burger("fish", "Land and Sea Fusion Burger", "assets/images/burger_fish4.jpeg", "Grilled shrimp and fish fillet, featuring seaweed salad, cucumber, wasabi mayonnaise", 10.99);
+let fish4 = new Burger("fish", "Tropical Breeze Burger", "assets/images/burger_fish1.jpeg", "Grilled fish fillet, fresh mango, lettuce, and exotic citrus sauce", 13.99);
 
 let veggie1 = new Burger("veggie", "Supreme Courgette","assets/images/burger_veggie1.jpeg", "Crispy burger with veggie steak and courgettes", 12);
 let veggie2 = new Burger("veggie", "Vegan Cheese","assets/images/burger_veggie2.jpeg", "Cheese burger with veggie steak", 12);

@@ -2982,4 +2982,19 @@ footer {
   background: #00a1de;
   color: white;
   padding: 2em;
+}
+.cards {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10vw;
+}
+
+.cards__wrapBurger {
+  width: 40vw;
+}
+.cards__wrapBurger__illustration {
+  width: 90px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+.cards {
+    width:90vw;
+    margin : auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:10vw;
+}
+
+.cards__wrapBurger{
+    width:40vw;
+    &__illustration {
+        width:90px;
+    }
+}
