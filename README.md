@@ -53,6 +53,12 @@ Team caddy already coding, good job !!!
  - Issue with the SCSS files directory --> some problems with the typo in certains folders.
  - It appears that the forked repo that I provided to the team is a little messy... [SCSS Playbook](https://github.com/tomboszko/Project-ScssPlaybook.git) it say ''Simplified strucuture'' obviously... 😲
 
+### end of the day 2 report :
+
+Globally, the main struggles we had cames from the **css / scss** ...
+We follow The trello to manage the task, we are creating one branch per features, it's a little bit tricky.
+I'm personnaly sick of css, When it's not a file directory problem, it's because of of the normalize... (thousands lines of normalize).
+
 to be continued...
 
  
