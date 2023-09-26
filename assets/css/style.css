@@ -67,12 +67,6 @@ html {
 }
 
 /* makes the font 33% larger relative to the icon container */
-.fa-lg {
-  font-size: 1.3333333333em;
-  line-height: 0.75em;
-  vertical-align: -15%;
-}
-
 .fa-2x {
   font-size: 2em;
 }
@@ -87,68 +81,6 @@ html {
 
 .fa-5x {
   font-size: 5em;
-}
-
-.fa-fw {
-  width: 1.2857142857em;
-  text-align: center;
-}
-
-.fa-ul {
-  padding-left: 0;
-  margin-left: 2.1428571429em;
-  list-style-type: none;
-}
-.fa-ul > li {
-  position: relative;
-}
-
-.fa-li {
-  position: absolute;
-  left: -2.1428571429em;
-  width: 2.1428571429em;
-  top: 0.1428571429em;
-  text-align: center;
-}
-.fa-li.fa-lg {
-  left: -1.8571428571em;
-}
-
-.fa-border {
-  padding: 0.2em 0.25em 0.15em;
-  border: solid 0.08em #eee;
-  border-radius: 0.1em;
-}
-
-.fa-pull-left {
-  float: left;
-}
-
-.fa-pull-right {
-  float: right;
-}
-
-.fa.fa-pull-left {
-  margin-right: 0.3em;
-}
-.fa.fa-pull-right {
-  margin-left: 0.3em;
-}
-
-/* Deprecated as of 4.4.0 */
-.pull-right {
-  float: right;
-}
-
-.pull-left {
-  float: left;
-}
-
-.fa.pull-left {
-  margin-right: 0.3em;
-}
-.fa.pull-right {
-  margin-left: 0.3em;
 }
 
 .fa-spin {
@@ -221,10 +153,6 @@ html {
 
 .fa-stack-2x {
   font-size: 2em;
-}
-
-.fa-inverse {
-  color: #fff;
 }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
@@ -3110,4 +3038,70 @@ footer {
 
 .button-checkout-pushable:focus:not(:focus-visible) {
   outline: none;
+}
+
+.shopping-cart-img {
+  height: 25px;
+  width: 25px;
+  filter: brightness(2);
+}
+
+.shopping-cart {
+  position: fixed;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  z-index: 0;
+  border-radius: 10px;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 20px;
+  padding-left: 2%;
+  padding-right: 3%;
+}
+
+.shopping-cart:before {
+  content: "";
+  background: linear-gradient(45deg, #c8102e, white);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.shopping-cart:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+  right: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }/*# sourceMappingURL=style.css.map */
