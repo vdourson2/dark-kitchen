@@ -59,6 +59,15 @@ Globally, the main struggles we had cames from the **css / scss** ...
 We follow The trello to manage the task, we are creating one branch per features, it's a little bit tricky.
 I'm personnaly sick of css, When it's not a file directory problem, it's because of of the normalize... (thousands lines of normalize).
 
+### end of the day 3 report :
+
+**The big merge day** !!! 
+
+We all merged our features branchs on dev to see what happens :
+
+ - just some adjustement for the scripts, globally all the back-end work perfectly
+ - some struggles with the merging of some scss files, but ''as usual''.
+
 to be continued...
 
  
