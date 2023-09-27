@@ -3,7 +3,9 @@ let cartCardsContainer = document.createElement("div");
 cartCardsContainer.classList.add("cart-cards-container");
 cartCardsList.appendChild(cartCardsContainer);
 let totalPrice = document.querySelector(".total-price");
+console.log(totalPrice);
 let totalItems = document.querySelector(".list-num");
+let cartTotalItems = document.querySelector(".notif-shopping-cart");
 let cartList = [];
 let total = 0;
 let numItems = 0;
@@ -11,8 +13,7 @@ let numItems = 0;
 // function to add card to cart
 function addElementToCart(e)
 {
-    //let burger = selectedBurgers[selectedBurgers.length - 1];
-    let burger = e;
+    let burger = selectedBurgers[selectedBurgers.length - 1];
     if (cartList.some(row => row.includes(burger)))
     {
         updateCart(burger, 1);
@@ -88,11 +89,11 @@ function updateCart(burger, x)
     // Check that the quantity is between 1 and 99
     if (lastNum == 1 && x == -1)
     {
-        console.log("less than 1 object: remove");
         cardToModify.remove();
         cartList.splice(cardIndex, 1);
-        //selectedBurgers.findIndex(burger);
-        //selectedBurgers.splice();
+        selectedBurgers.findIndex(burger);
+        console.log(selectedBurgers);
+        selectedBurgers.splice(cardIndex, 1);
         updateTotal(burger.price * x)
         updateItemsNum(x);
         return;
@@ -112,7 +113,8 @@ function updateCart(burger, x)
     let priceToModify = cardToModify.querySelector("p");
     numToModify.childNodes[0].nodeValue = lastNum + x;
     cartList[cardIndex][1] += x;
-    priceToModify.childNodes[0].nodeValue = "€" + (lastPrice + (priceForOne * x));
+    let price = (lastPrice + (priceForOne * x)).toFixed(2);
+    priceToModify.childNodes[0].nodeValue = "€" + price;
     cartList[cardIndex][3] += priceForOne * x;
 
     updateTotal(burger.price * x);
@@ -123,7 +125,7 @@ function updateCart(burger, x)
 function updateTotal(price)
 {
     total += price;
-    totalPrice.childNodes[0].nodeValue = "€" + total.toFixed(2);
+    totalPrice.childNodes[0].nodeValue = "€" + Math.abs(total.toFixed(2));
 }
 
 // Function to call each time an element is added or deleted to update the number of items total
@@ -131,14 +133,5 @@ function updateItemsNum(x)
 {
     numItems += x;
     totalItems.childNodes[0].nodeValue = numItems + " items";
+    cartTotalItems.childNodes[0].nodeValue = numItems;
 }
-
-addElementToCart(chicken1);
-// addElementToCart(chicken2);
-// addElementToCart(chicken1);
-// addElementToCart(chicken2);
-// addElementToCart(chicken1);
-// addElementToCart(chicken3);
-// addElementToCart(chicken4);
-
-//updateCart(chicken1, 90);
