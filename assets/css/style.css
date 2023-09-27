@@ -68,6 +68,8 @@ html {
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
   vertical-align: -15%;
 }
 
@@ -88,11 +90,13 @@ html {
 }
 
 .fa-fw {
+  width: 1.2857142857em;
   text-align: center;
 }
 
 .fa-ul {
   padding-left: 0;
+  margin-left: 2.1428571429em;
   list-style-type: none;
 }
 .fa-ul > li {
@@ -101,8 +105,15 @@ html {
 
 .fa-li {
   position: absolute;
+  left: -2.1428571429em;
+  width: 2.1428571429em;
+  top: 0.1428571429em;
   text-align: center;
 }
+.fa-li.fa-lg {
+  left: -1.8571428571em;
+}
+
 .fa-border {
   padding: 0.2em 0.25em 0.15em;
   border: solid 0.08em #eee;
@@ -210,10 +221,6 @@ html {
 
 .fa-stack-2x {
   font-size: 2em;
-}
-
-.fa-inverse {
-  color: #fff;
 }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
@@ -2876,16 +2883,12 @@ Files inside this folder can contain abstract settings,
 helpers or functions. They have no direct output.
 */
 @font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+  font-family: "roboto";
+  src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: normal;
-  src: url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+  font-family: "poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Regular.ttf");
 }
 /*
 This file is used to contain all base imports.
@@ -2895,6 +2898,60 @@ the project.
 /*
 This file can be used to overwrite any normailze settings.
 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 html,
 body {
   margin: 0;
@@ -2906,56 +2963,12 @@ body * {
   box-sizing: inherit;
 }
 
-html {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  color: rgb(51, 51, 51);
-  line-height: 1.5;
-  font-size: 14px;
-}
-@media only screen and (min-width: 600px) {
-  html {
-    font-size: 15px;
-  }
-}
-@media only screen and (min-width: 1080px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  margin: 0;
-  margin-bottom: 1em;
-  line-height: 1.2;
-}
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  font-weight: inherit;
-}
-
-p {
-  margin-bottom: 1em;
-}
-
-em {
-  font-style: italic;
-}
-
-strong {
-  font-weight: bold;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
 /*
 This file is used to contain all component imports.
 Files inside this folder should contain all styles relating
 to a reusable component.
 */
-.container, footer div {
+.container {
   display: block;
   margin: 0 auto;
   padding: 0 1em;
@@ -2967,11 +2980,26 @@ This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
 to layouts.
 */
-footer {
-  background: #00a1de;
-  color: white;
-  padding: 2em;
+.header {
+  width: 375px;
+  height: 375px;
+  background-image: url("/assets/images/Header_keller.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+  font-family: "roboto";
+  color: #f4f4f4;
 }
+.header .header__title {
+  margin-top: 12px;
+}
+
 .cart {
   background-color: rgb(233, 228, 222);
   position: fixed;
@@ -2981,6 +3009,7 @@ footer {
   right: 0;
   height: 90vh;
   border-radius: 25px 25px 0px 0px;
+  display: none;
 }
 .cart .cart-title {
   display: flex;
@@ -3010,56 +3039,94 @@ footer {
   background-color: rgb(231, 231, 231);
 }
 
-.total {
-  color: black;
+.container-shopping-cart {
+  position: relative;
+  height: 100vh;
+}
+
+.notif-shopping-cart {
+  border: 7px solid black;
+  color: white;
+  background-color: #111;
+  filter: opacity(0.8);
+  border-radius: 25px;
+  text-align: center;
+  font-size: 12px;
+  z-index: 9999;
+  width: 25px;
+  position: fixed;
+  bottom: 80px;
+  right: 22px;
+}
+
+.notif-shopping-cart:hover {
+  background-color: red;
+  color: white;
+  border: 7px solid red;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.shopping-cart-img {
+  height: 60px;
+  width: 60px;
+  filter: brightness(2);
+}
+
+.shopping-cart {
+  --c: #fff;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 33%, rgba(255, 255, 255, 0.3333333333), rgba(0, 0, 0, 0) 67%) var(--_p, 100%)/300% no-repeat, #004dff;
+  color: rgba(0, 0, 0, 0);
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
+  text-shadow: calc(var(--_i, -1) * 0.08em) -0.01em 0 var(--c), calc(var(--_i, -1) * -0.08em) 0.01em 2px rgba(0, 0, 0, 0.2666666667);
+  outline-offset: 0.1em;
+  transition: 0.3s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9990;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.shopping-cart:hover,
+.shopping-cart:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+  background-color: red;
+}
+
+.shopping-cart:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9000000000q rgba(0, 0, 0, 0.3333333333);
+  transition: 0s;
+}
+
+.cards {
+  width: 90vw;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-}
-.total .total-total {
-  font-size: medium;
-}
-.total .total-price {
-  font-weight: bold;
+  flex-wrap: wrap;
+  gap: 10vw;
 }
 
-.button-checkout-pushable {
-  position: relative;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-  transition: filter 250ms;
-  -moz-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+.cards__wrapBurger {
+  width: 40vw;
+  color: #2f2f2f;
+  box-shadow: 5px 5px 10px 2px #cbcbcb;
+  border-radius: 10px;
 }
-
-.button-checkout-shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
+.cards__wrapBurger__black {
   width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: hsla(0, 0%, 0%, 0.25);
-  will-change: transform;
-  transform: translateY(2px);
-  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  height: 85px;
+  background-color: #2f2f2f;
+  border-radius: 10px 10px 0 0;
 }
-
-.button-checkout-edge {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: linear-gradient(to left, hsl(340, 100%, 16%) 0%, hsl(340, 100%, 32%) 8%, hsl(340, 100%, 32%) 92%, hsl(340, 100%, 16%) 100%);
-}
-
-.button-checkout-front {
+.cards__wrapBurger__illustration {
   display: block;
   position: relative;
   padding: 12px 27px;
@@ -3099,75 +3166,4 @@ footer {
 
 .button-checkout-pushable:focus:not(:focus-visible) {
   outline: none;
-}
-
-.cart-list {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  height: 60vh;
-  overflow-y: scroll;
-}
-.cart-list p {
-  font-size: 18px;
-}
-.cart-list .cart-card {
-  display: grid;
-  grid-template-columns: 25% 50% 25%;
-  grid-template-rows: repeat(2, 1fr);
-  background-color: white;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 25px;
-}
-.cart-list .cart-card img {
-  max-height: 100px;
-  grid-column: 1;
-  grid-row: 1/span 2;
-  justify-self: center;
-  border-radius: 50px;
-}
-.cart-list .cart-card h3 {
-  grid-column: 2;
-  grid-row: 1;
-  align-self: flex-end;
-  margin: 0;
-}
-.cart-list .cart-card p {
-  grid-column: 2;
-  grid-row: 2;
-  align-self: flex-start;
-  margin: 0;
-}
-.cart-list .cart-card .cart-modify {
-  grid-column: 3;
-  grid-row: 1/span 2;
-  justify-self: center;
-  display: flex;
-  align-items: center;
-  background-color: red;
-  color: white;
-  border-radius: 25px;
-  gap: 5px;
-}
-.cart-list .cart-card .cart-modify .cart-removeButton {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 25px;
-}
-.cart-list .cart-card .cart-modify .cart-addButton {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 20px;
-}
-
-.cart-list::-webkit-scrollbar {
-  display: none;
 }/*# sourceMappingURL=style.css.map */
