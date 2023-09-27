@@ -2984,20 +2984,6 @@ This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
 to layouts.
 */
-@media (prefers-color-scheme: dark) {
-  .category {
-    background-color: #2f2f2f;
-  }
-  .category__title {
-    color: #f4f4f4;
-  }
-  .category__list__item {
-    color: #cbcbcb;
-    box-shadow: 3px 4px 11px -4px #f4f4f4;
-    -webkit-box-shadow: 3px 4px 11px -4px #f4f4f4;
-    -moz-box-shadow: 3px 4px 11px -4px #f4f4f4;
-  }
-}
 .category {
   width: 100%;
   display: flex;
@@ -3035,26 +3021,22 @@ to layouts.
 .category__list__item {
   background: #c8102e;
   color: #f4f4f4;
-  width: 60px;
+  width: 40px;
   height: 20px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
   font-family: "poppins";
-  font-size: 8px;
+  font-size: 6px;
   font-weight: 900;
   padding-top: 7px;
   border-radius: 5px;
   box-shadow: 3px 4px 11px -4px rgb(0, 0, 0);
-  -webkit-box-shadow: 3px 4px 11px -4px rgb(0, 0, 0);
-  -moz-box-shadow: 3px 4px 11px -4px rgb(0, 0, 0);
 }
-
-.category__list__item:hover { /* IE 9 */ /* Safari 3-8 */
+.category__list__item:hover {
   transform: scale(1.05);
 }
-
-.category__list__item:active { /* IE 9 */ /* Safari 3-8 */
+.category__list__item:active {
   transform: scale(0.98);
 }
 
@@ -3070,6 +3052,20 @@ to layouts.
   }
   #category__list {
     margin-top: 5px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .category {
+    background-color: #2f2f2f;
+  }
+  .category__title {
+    color: #f4f4f4;
+  }
+  .category__list__item {
+    color: #cbcbcb;
+    box-shadow: 3px 4px 11px -4px #f4f4f4;
+    -webkit-box-shadow: 3px 4px 11px -4px #f4f4f4;
+    -moz-box-shadow: 3px 4px 11px -4px #f4f4f4;
   }
 }
 .cards {
@@ -3162,69 +3158,62 @@ to layouts.
     box-shadow: 5px 5px 10px 2px #f4f4f4;
   }
 }
-@media (prefers-color-scheme: dark) {
-  .container_text {
-    color: #cbcbcb;
-  }
-  .container_title {
-    color: #cbcbcb;
-  }
-  .header {
-    width: 100%;
-    height: 130px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #2f2f2f;
-  }
-  .header_main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .container_title {
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "roboto";
-    color: #f4f4f4;
-    text-align: center;
-    font-size: 46px;
-  }
-  .logo_burger {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-  }
-  .container_text {
-    margin-left: auto;
-    margin-right: auto;
-    display: none;
-    justify-content: center;
-    font-family: "poppins";
-    font-size: 10px;
-    color: #f4f4f4;
-    text-align: center;
-  }
+.header {
+  width: 100%;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f2f2f;
 }
+
+.header_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container_title {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "roboto";
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 46px;
+}
+
+.logo_burger {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.header__text {
+  font-size: 24px;
+}
+
 @media only screen and (min-width: 375px) and (max-width: 768px) {
-  .container_title {
-    font-size: 56px;
+  img {
+    width: 180px;
+    height: 180px;
   }
   .header {
-    height: 150px;
+    height: 250px;
   }
-  .container_text {
+  .header .container_text {
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
     display: flex;
     justify-content: center;
     font-family: "poppins";
-    font-size: 20px;
+    font-size: 56px;
     color: #f4f4f4;
     text-align: center;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 375px) and (max-width: 768px) and (min-width: 768px) and (max-width: 1024px) {
   .container_title {
     font-size: 56px;
   }
