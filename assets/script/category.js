@@ -18,9 +18,11 @@ function displayBurgersByCategory(category) {
         // show cat.
         let filteredBurgers = burgers.filter(burger => burger.category === category);
         displayCards(filteredBurgers);
-    }
 }
+}
+// show burger cards
 
+//code from virgine
 // event listener
 categoryItems.forEach(item => {
     item.addEventListener('click', (e) => {

@@ -1,26 +1,4 @@
 
-@media (prefers-color-scheme: dark) {
-
-
-    .category {
-        background-color: $quickblack;
-    }
-    .category__title {
-        color: $quickwhite;
-    }
-
-    
-    .category__list__item {
-
-        color:$quickgrey;
-        box-shadow: 3px 4px 11px -4px $quickwhite;
-        -webkit-box-shadow: 3px 4px 11px -4px $quickwhite;
-        -moz-box-shadow: 3px 4px 11px -4px $quickwhite;
-        
-    }
-}
-
-
 .category {
     width: 100%;
     display:flex;
@@ -65,54 +43,60 @@
 
     background:$quickred;
     color:$quickwhite;
-    width: 60px;
+    width: 40px;
     height: 20px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     font-family: $poppins;
-    font-size: 8px;
+    font-size: 6px;
     font-weight: 900;
     padding-top: 7px;
     border-radius: 5px;
     box-shadow: 3px 4px 11px -4px rgba(0,0,0,1);
-    -webkit-box-shadow: 3px 4px 11px -4px rgba(0,0,0,1);
-    -moz-box-shadow: 3px 4px 11px -4px rgba(0,0,0,1);
     
+    &:hover {
+        transform: scale(1.05);
+      }
+      &:active { 
+        transform: scale(0.98);
+      }
+      
 }
-
-.category__list__item:hover { /* IE 9 */ /* Safari 3-8 */
-    transform: scale(1.05);
-  }
-
-.category__list__item:active { /* IE 9 */ /* Safari 3-8 */
-    transform: scale(0.98);
-  }
-  
 
 
 
 @media only screen and (min-width:375px) and (max-width:768px) {
 
     .category__list__item {
-
         width: 75px;
         height: 20px;
         font-size: 12px;
         padding-top: 5px;
-        
-        
     }
-
     .category__title {
-
         display: contents;
-
     }
 
     #category__list {
         margin-top: 5px;
     }
 
+}
 
+@media (prefers-color-scheme: dark) {
+    .category {
+        background-color: $quickblack;
+    }
+    .category__title {
+        color: $quickwhite;
+    }
+    .category__list__item {
+
+        color:$quickgrey;
+        box-shadow: 3px 4px 11px -4px $quickwhite;
+        -webkit-box-shadow: 3px 4px 11px -4px $quickwhite;
+        -moz-box-shadow: 3px 4px 11px -4px $quickwhite;
+        
+    }
 }
