@@ -3,7 +3,6 @@
 .header {
     width: 100%;
     height: 130px;
-
     margin: {
         left: auto;
         right: auto;
@@ -28,7 +27,7 @@
     font-family: $roboto;
     color: $quickwhite;
     text-align: center;
-    font-size: 46px;
+    font-size: 40px;
 
 }
 
@@ -48,20 +47,23 @@
     font-size: 24px;
 }
 
+.header_subtitle {
+
+    display:none;
+}
+
 
 @media only screen and (min-width:375px) and (max-width:768px) {
 
   
 
     .header {
-        height: 250px;
+        height: 210px;
         img {
             width: 180px;
             height:180px;
         }
       
-
-
         .container_text {
     
             margin: {
@@ -73,22 +75,33 @@
             justify-content:center;
         
             font-family: $poppins;
-                font-size: 56px;
-        
-            color: $quickwhite;
+            color: $quickred;
             text-align: center;
+
+        }
+        .container_title {
+        
+            font-size: 54px;
+        }
         }
 
-}
 
 
-
+    }
 @media only screen and (min-width:768px) and (max-width:1024px) {
 
     .container_title {
-        font-size: 56px;
+        font-size: 64px;
     }
 
+    
 }
 
+@media only screen and (min-width:1024px)  {
+    
+    .container_title {
+        font-size:94px;
+    }
+
+   
 }

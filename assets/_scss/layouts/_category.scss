@@ -1,4 +1,5 @@
 
+
 .category {
     width: 100%;
     display:flex;
@@ -11,18 +12,6 @@
     background-color: $quickwhite;
 }  
 
-.category__title {
-    display: none;
-    font-family: $roboto;
-    font-size: 12px;
-    font-weight: 900;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    align-items: center;
-    color:$quickblack;
-    
-
-}
 
 #category__list {
 
@@ -42,16 +31,16 @@
 .category__list__item {
 
     background:$quickred;
-    color:$quickwhite;
-    width: 40px;
+    color:rgba(245, 245, 220, 0);
+    width: 30px;
     height: 20px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     font-family: $poppins;
-    font-size: 6px;
+    font-size: 15px;
     font-weight: 900;
-    padding-top: 7px;
+    padding-top: 2px;
     border-radius: 5px;
     box-shadow: 3px 4px 11px -4px rgba(0,0,0,1);
     
@@ -64,39 +53,40 @@
       
 }
 
+.category__title {
+    display: none;
+    color: $quickwhite;
+}
 
 
-@media only screen and (min-width:375px) and (max-width:768px) {
+@media only screen and (min-width:376px) and (max-width:768px) {
 
     .category__list__item {
-        width: 75px;
-        height: 20px;
+        width: 80px;
+        height: 30px;
         font-size: 12px;
-        padding-top: 5px;
-    }
-    .category__title {
-        display: contents;
+        padding-top: 8px;
+        color: $quickwhite;
     }
 
     #category__list {
         margin-top: 5px;
     }
 
-}
-
-@media (prefers-color-scheme: dark) {
-    .category {
-        background-color: $quickblack;
-    }
     .category__title {
+        display: none;
         color: $quickwhite;
     }
-    .category__list__item {
+}
 
-        color:$quickgrey;
-        box-shadow: 3px 4px 11px -4px $quickwhite;
-        -webkit-box-shadow: 3px 4px 11px -4px $quickwhite;
-        -moz-box-shadow: 3px 4px 11px -4px $quickwhite;
-        
+@media only screen and (min-width:1024px)  {
+    
+    .category__list__item {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        padding-top: 8px;
+        color: $quickwhite;
     }
+
 }
