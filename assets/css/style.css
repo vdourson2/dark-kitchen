@@ -3202,7 +3202,7 @@ to layouts.
 }
 @media only screen and (min-width: 768px) {
   .cart-title {
-    font-size: 18px;
+    font-size: 32px;
   }
   .cart-title button {
     font-size: 8px;
@@ -3214,7 +3214,7 @@ to layouts.
 }
 @media only screen and (min-width: 1024px) {
   .cart-title {
-    font-size: 20px;
+    font-size: 55px;
   }
   .cart-title button {
     font-size: 12px;
@@ -3366,10 +3366,11 @@ to layouts.
 }
 
 .notif-shopping-cart:hover {
-  background-color: #c8102e;
+  background-color: red;
   color: white;
   border: 7px solid red;
   transition: opacity 0.3s ease-in-out;
+  transform: scale(1.2);
 }
 
 .shopping-cart-img {
@@ -3402,6 +3403,7 @@ to layouts.
   --_p: 0%;
   --_i: 1;
   background-color: #c8102e;
+  transform: scale(1.1);
 }
 
 .shopping-cart:active {
