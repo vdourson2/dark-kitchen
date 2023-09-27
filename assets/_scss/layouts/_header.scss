@@ -13,7 +13,7 @@
 
 .header {
     width: 100%;
-    height: 180px;
+    height: 130px;
 
     margin: {
         left: auto;
@@ -49,6 +49,7 @@
         right: auto;
         top: 10px;
 }
+
 }
 
 .container_text {
@@ -56,12 +57,12 @@
         left: auto;
         right: auto;
     }
-    display: flex;
+    display: none;
     justify-content:center;
 
     font: {
         family: $poppins;
-        size: 24px;
+        size: 10px;
     }
     color: $quickwhite;
     text-align: center;
@@ -75,14 +76,27 @@
         font-size: 48px;
     }
 
-    .container_text {
 
-        display: none;
-    }
 
     .header {
-        height: 120px;
+        height: 150px;
 
+}
+
+.container_text {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    display: flex;
+    justify-content:center;
+
+    font: {
+        family: $poppins;
+        size: 20px;
+    }
+    color: $quickwhite;
+    text-align: center;
 }
 
 }
