@@ -1,9 +1,26 @@
 
+
+@media (prefers-color-scheme: dark) {
+
+    .header__text {
+        color: $quickgrey;
+    } 
+
+    .container_title {
+        color: $quickgrey;
+    }
+
+
 .header {
     width: 375px;
     height: 200px;
+
+    margin: {
+        left: auto;
+        right: auto;
+    }
     background-color: $quickblack;
-    position: sticky;
+    
 }
 
 .header_main {
@@ -14,25 +31,36 @@
 }
 
 .container_title {
-    margin-left: auto;
-    margin-right: auto;
+    margin: {
+        left: auto;
+        right: auto;
     font-family: $roboto;
     color: $quickwhite;
 }
+}
 
 .logo_burger {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+
+    margin: {
+        left: auto;
+        right: auto;
+        top: 10px;
+}
 }
 
 .container_text {
+    margin: {
+        left: auto;
+        right: auto;
+    }
     display: flex;
     justify-content:center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: $poppins;
+
+    font: {
+        family: $poppins;
+        size: 24px;
+    }
     color: $quickwhite;
-    font-size: 24px;
 }
-    
+
+}
