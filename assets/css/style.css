@@ -3190,7 +3190,7 @@ to layouts.
 
 @media only screen and (max-width: 768px) {
   .cart-title {
-    font-size: 14px;
+    font-size: 22px;
   }
   .cart-title button {
     font-size: 6px;
@@ -3255,7 +3255,7 @@ to layouts.
   border: none;
   background: transparent;
   padding: 0;
-  margin-left: 65%;
+  margin-left: 58%;
   cursor: pointer;
   outline-offset: 4px;
   transition: filter 250ms;
@@ -3366,7 +3366,7 @@ to layouts.
 }
 
 .notif-shopping-cart:hover {
-  background-color: red;
+  background-color: #c8102e;
   color: white;
   border: 7px solid red;
   transition: opacity 0.3s ease-in-out;
@@ -3380,7 +3380,7 @@ to layouts.
 
 .shopping-cart {
   --c: #fff;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 33%, rgba(255, 255, 255, 0.3333333333), rgba(0, 0, 0, 0) 67%) var(--_p, 100%)/300% no-repeat, #004dff;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 33%, rgba(255, 255, 255, 0.3333333333), rgba(0, 0, 0, 0) 67%) var(--_p, 100%)/300% no-repeat, #c8102e;
   color: rgba(0, 0, 0, 0);
   border: none;
   transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
@@ -3401,7 +3401,7 @@ to layouts.
 .shopping-cart:focus-visible {
   --_p: 0%;
   --_i: 1;
-  background-color: red;
+  background-color: #c8102e;
 }
 
 .shopping-cart:active {
@@ -3485,19 +3485,19 @@ to layouts.
 
 @media only screen and (max-width: 768px) {
   .cart-list p {
-    font-size: 12px;
+    font-size: 18px;
   }
   .cart-list .cart-card img {
     max-height: 50px;
   }
   .cart-list .cart-card h3 {
-    font-size: 12px;
+    font-size: 18px;
   }
   .cart-list .cart-card p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .cart-list .cart-card .cart-modify {
-    font-size: 10px;
+    font-size: 14px;
   }
   .cart-list .cart-card .cart-modify .cart-removeButton {
     font-size: 15px;
