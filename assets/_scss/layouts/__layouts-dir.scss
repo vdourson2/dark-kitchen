@@ -4,8 +4,10 @@ Files inside this folder should contain all styles relating
 to layouts.
 */
 //Import layout files
-
-@import 'footer';
+@import 'header';
 @import 'cart';
 @import 'cart-checkout';
+@import 'shopping-cart';
 @import 'cart-cards';
+
+@import 'cards.scss';
