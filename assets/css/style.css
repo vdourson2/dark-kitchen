@@ -2984,7 +2984,6 @@ This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
 to layouts.
 */
-<<<<<<< HEAD
 @media (prefers-color-scheme: dark) {
   .category {
     background-color: #2f2f2f;
@@ -3001,16 +3000,19 @@ to layouts.
   .category {
     width: 375px;
     display: flex;
+    position: relative;
     justify-content: center;
     flex-direction: column;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 52px;
     background-color: #f4f4f4;
   }
   .category__title {
     font-family: "roboto";
     font-size: 12px;
     margin-top: 5px;
+    margin-bottom: 5px;
     align-items: center;
     color: #2f2f2f;
   }
@@ -3022,6 +3024,7 @@ to layouts.
     align-items: center;
     padding-left: 0;
     margin-top: 0;
+    margin-bottom: 5px;
   }
   .category__list__item {
     background: #c8102e;
@@ -3034,8 +3037,7 @@ to layouts.
     font-family: "poppins";
     font-size: 10px;
     font-weight: 900;
-    padding: 5px;
-    padding-top: 7px;
+    padding-top: 10px;
     border-radius: 5px;
     box-shadow: 3px 4px 11px -4px rgb(0, 0, 0);
     -webkit-box-shadow: 3px 4px 11px -4px rgb(0, 0, 0);
@@ -3046,27 +3048,8 @@ to layouts.
   }
   .category__list__item:active { /* IE 9 */ /* Safari 3-8 */
     transform: scale(0.98);
-=======
-.header {
-  width: 375px;
-  height: 375px;
-  background-image: url("/assets/images/Header_keller.jpeg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: auto;
-  padding-right: auto;
-  text-align: center;
-  font-family: "roboto";
-  color: #f4f4f4;
+  }
 }
-.header .header__title {
-  margin-top: 12px;
-}
-
 .cards {
   width: 90vw;
   margin: auto;
@@ -3158,6 +3141,5 @@ to layouts.
     background-color: #2f2f2f;
     color: #f4f4f4;
     box-shadow: 5px 5px 10px 2px #f4f4f4;
->>>>>>> dev
   }
 }/*# sourceMappingURL=style.css.map */
