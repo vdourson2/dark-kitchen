@@ -1,0 +1,116 @@
+
+@media (prefers-color-scheme: dark) {
+
+    .category {
+        background-color: $quickblack;
+    }
+    .category__title {
+        color: $quickwhite;
+    }
+
+    
+    .category__list__item {
+
+        color:$quickgrey;
+        box-shadow: 3px 4px 11px -4px $quickwhite;
+        -webkit-box-shadow: 3px 4px 11px -4px $quickwhite;
+        -moz-box-shadow: 3px 4px 11px -4px $quickwhite;
+        
+    }
+
+
+.category {
+    width: 100%;
+    display:flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 52px;
+    background-color: $quickwhite;
+}  
+
+.category__title {
+    display: none;
+    font-family: $roboto;
+    font-size: 12px;
+    font-weight: 900;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    color:$quickblack;
+    
+
+}
+
+#category__list {
+
+    list-style:none ;
+    display: inline-flex;
+    position: relative;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    
+}
+
+
+.category__list__item {
+
+    background:$quickred;
+    color:$quickwhite;
+    width: 40px;
+    height: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: $poppins;
+    font-size: 6px;
+    font-weight: 900;
+    padding-top: 7px;
+    border-radius: 5px;
+    box-shadow: 3px 4px 11px -4px rgba(0,0,0,1);
+    -webkit-box-shadow: 3px 4px 11px -4px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 4px 11px -4px rgba(0,0,0,1);
+    
+}
+
+.category__list__item:hover { /* IE 9 */ /* Safari 3-8 */
+    transform: scale(1.05);
+  }
+
+.category__list__item:active { /* IE 9 */ /* Safari 3-8 */
+    transform: scale(0.98);
+  }
+  
+}
+
+
+@media only screen and (min-width:375px) and (max-width:768px) {
+
+    .category__list__item {
+
+        width: 80px;
+        height: 20px;
+        font-size: 12px;
+        padding-top: 5px;
+        
+       
+        
+    }
+
+    .category__title {
+
+        display: contents;
+
+    }
+
+    #category__list {
+        margin-top: 5px;
+    }
+}
+
