@@ -91,7 +91,6 @@ function updateCart(burger, x)
     {
         cardToModify.remove();
         cartList.splice(cardIndex, 1);
-        selectedBurgers.findIndex(burger);
         console.log(selectedBurgers);
         selectedBurgers.splice(cardIndex, 1);
         updateTotal(burger.price * x)

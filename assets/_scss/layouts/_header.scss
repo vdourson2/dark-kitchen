@@ -51,14 +51,15 @@
 
 @media only screen and (min-width:375px) and (max-width:768px) {
 
-    img {
-        width: 180px;
-        height:180px;
-    }
   
 
     .header {
         height: 250px;
+        img {
+            width: 180px;
+            height:180px;
+        }
+      
 
 
         .container_text {

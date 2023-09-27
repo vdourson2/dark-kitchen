@@ -3122,12 +3122,12 @@ to layouts.
 }
 
 @media only screen and (min-width: 375px) and (max-width: 768px) {
-  img {
-    width: 180px;
-    height: 180px;
-  }
   .header {
     height: 250px;
+  }
+  .header img {
+    width: 180px;
+    height: 180px;
   }
   .header .container_text {
     margin-left: auto;
