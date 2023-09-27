@@ -1,22 +1,25 @@
 let selectedBurgers = [];
 
+//This function takes an object from the class Burger, and 
+//add it into the array selectedBurgers
 function addCart(burger) {
     selectedBurgers.push(burger);
     console.log(selectedBurgers);
     addElementToCart();
 }
 
-
+//This function takes an array of objects from the Burger class
+//and display it into the main section
 function displayCards(arrayToDisplay) {
     let cards = document.querySelector(".cards");
-    //Supprimer toutes les cartes affichée précédemment :
-    let cardsToSuppress = [];
-    cardsToSuppress = cards.children;
-    console.log(cardsToSuppress);
+
+    //Suppress all former displayed cards :
+    let cardsToSuppress = cards.children;
     while (cardsToSuppress.length>0){
         cards.removeChild(cardsToSuppress[cardsToSuppress.length-1]);
     }
     
+    //Display all new cards from the array to display
     for (let burger of arrayToDisplay) {
         let wrapBurger = document.createElement("div");
         wrapBurger.classList.add("cards__wrapBurger");
@@ -37,5 +40,5 @@ function displayCards(arrayToDisplay) {
 }
 
 displayCards(burgers);
-// let tests = [beef1, beef2, beef3, beef4];
-// displayCards(tests);
+// let test = [beef1, beef2, beef3];
+// displayCards(test);
