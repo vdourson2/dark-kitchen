@@ -36,6 +36,8 @@ function displayCards(arrayToDisplay) {
                                 </div>`;
         let add = wrapBurger.querySelector(".cards__wrapBurger__wrapPrice__add");
         add.addEventListener('click', () => addCart(burger));
+        let burgerName = wrapBurger.querySelector(".cards__wrapBurger__burgerName");
+        burgerName.addEventListener('click',() => wrapBurger.classList.toggle("zoom"));
     }
 }
 

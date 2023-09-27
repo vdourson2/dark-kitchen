@@ -1,5 +1,6 @@
 
 .cards {
+    position:relative;
     width:90vw;
     margin : auto;
     display: flex;
@@ -28,7 +29,7 @@
     }
     &__white{
         padding:20px 10px 10px 10px;
-        height:200px;
+        height:120px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -40,7 +41,8 @@
     }
     &__description {
         font-family: $poppins;
-        font-size:15px
+        font-size:15px;
+        display: none;
     }
     &__wrapPrice {
         display: flex;
@@ -66,6 +68,23 @@
     }
 }
 
+.zoom{
+    scale : 2;
+    position: relative;
+    left: 50%;
+    transform: translateX(-25%);
+    .cards__wrapBurger{
+        &__description {
+            display: block;
+            font-size: 12px;
+        }
+        &__white{
+            height:200px;
+            padding:20px;
+        }
+    }
+}
+
 @media only screen and (min-width: $screenTablet){
     .cards {
         gap: 6vw;
@@ -75,6 +94,11 @@
         width:26vw;
         &__white{
             padding:20px 25px;
+            height : 220px;
+        }
+        &__description{
+            display: block;
+            font-size: 16px;
         }
     }
 }
