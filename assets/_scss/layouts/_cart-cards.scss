@@ -1,0 +1,109 @@
+.cart-list
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 70%;
+    
+
+    p 
+    {
+        font-family: $poppins;
+    }
+
+    .cart-cards-container
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        overflow-y: scroll;
+        height: 90%;
+        margin-top: 5px;
+
+        .cart-card
+        {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+            border-radius: 25px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            img 
+            {
+                border-radius: 50px;
+                justify-self: center;
+            }
+
+            h3 
+            {
+                margin: 0;
+                font-family: $roboto;
+            }
+
+            p 
+            {
+                margin: 0;
+                font-family: $poppins;
+                justify-self: end;
+            }
+
+            .cart-modify
+            {
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                justify-self: center;
+                background-color: $quickred;
+                border-radius: 25px;
+                gap: 5px;
+                font-family: $poppins;
+
+                .cart-removeButton
+                {
+                    background: none;
+                    border: none;
+                    font-family: $poppins;
+                }
+
+                .cart-addButton
+                {
+                    background: none;
+                    border: none;
+                    font-family: $poppins;
+                }
+            }
+        }
+    }
+}
+
+.cart-cards-container::-webkit-scrollbar 
+{
+    display: none;
+}
+
+@media only screen and (max-width: 768px)
+{
+    @include cartCardMedia(18px, 14px, 50px, 10px);
+}
+
+@media only screen and (min-width: 768px)
+{
+    @include cartCardMedia(22px, 16px, 80px, 18px);
+}
+
+@media only screen and (min-width: 1024px) 
+{
+    @include cartCardMedia(25px, 20px, 100px, 22px);
+}
+
+@media (prefers-color-scheme: light) 
+{
+    @include cartCardsDarkMode($quickblack, $quickwhite);
+}
+
+@media (prefers-color-scheme: dark) 
+{
+    @include cartCardsDarkMode($quickwhite, $quickblack);
+}

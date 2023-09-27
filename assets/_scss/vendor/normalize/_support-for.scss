@@ -48,9 +48,9 @@ $support-for-current-browser-version: (
   @if type-of($min-version) != "null" and type-of($min-version) != "number" {
     @error "$support-for: (#{$browser}: #{$min-version}) must be set to an integer (or null); #{$min-version} is a #{type-of($min-version)}.";
   }
-  @elseif type-of($min-version) == "number" and round($min-version) != $min-version {
-    @error "$support-for: (#{$browser}: #{$min-version}) must be set to an integer (or null); #{$min-version} is not an integer.";
-  }
+  // @elseif type-of($min-version) == "number" and round($min-version) != $min-version {
+  //   @error "$support-for: (#{$browser}: #{$min-version}) must be set to an integer (or null); #{$min-version} is not an integer.";
+  // }
 
   // Negative $min-version means "X most recent versions".
   @if type-of($min-version) == "number" and $min-version < 0 {

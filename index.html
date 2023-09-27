@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark kitchen</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src=""></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script defer src="assets/script/category.js"></script>
+    <script defer src="assets/script/shoppingCart.js"></script>
+    <script defer src="assets/script/cards.js"></script>
+    <script defer src="assets/script/main.js"></script>
 </head>
 <body>
     <!-- header -->
     <header class="header">
-        <h1 class="header__title">Keller's Burger</h1>
-        <p class="header__text">The best taste in the world</p>
-        <img src="#" alt="" class="header__logo">
+
+        <div class="header_main">
+            <div class="logo_burger"><img src="/assets/images/Header_burger.png" alt="Kellers burger" width="100" height="100"></div>
+            <div class="container_title">
+            <h1 class="header__title">Keller's Burgers</h1>
+            </div>
+        </div>
+
+        <div class="header_subtitle">
+            <div class="container_text">
+            <p class="header__text">The best taste in the world</p>
+            </div>
+        </div>
+        
     </header>
 
     <!-- Category -->
     <nav class="category">
         <h2 class="category__title">Categories</h2>
-        <ul class="category__list">
-            <li class="category__list__item">All</li>
-            <li class="category__list__item">Beef</li>
-            <li class="category__list__item">Chicken</li>
-            <li class="category__list__item">Fish</li>
-            <li class="category__list__item">Veggies</li>
+        <ul id="category__list">
+            <li class="category__list__item" data-category="all"><link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'><span class="ec ec-hamburger"></span> All</li>
+            <li class="category__list__item" data-category="beef"><link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'><span class="ec ec-cow"></span> Beef</li>
+            <li class="category__list__item" data-category="chicken"><link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'><span class="ec ec-chicken"></span> Chicken</li>
+            <li class="category__list__item" data-category="fish"><link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'><span class="ec ec-fish"></span> Fish</li>
+            <li class="category__list__item" data-category="veggie"><link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'><span class="ec ec-seedling"></span> Veggie</li>
         </ul>
     </nav>
 
@@ -37,12 +51,72 @@
                 <p class="card__description"></p>
                 <p class="card__price"></p>
             </div> -->
-    </main>    
+    </main> 
+    
+    <div class="container-shopping-cart">
+
+
+         <div class="notif-shopping-cart">
+         
+            0
+        
+         </div>
+
+         <button onclick="openCart()" class="shopping-cart">
+
+            <img class="shopping-cart-img" src="assets/images/panier1.png" 
+            alt="shoppingcart">
+
+         </button>
+
+    </div> 
 
 
     <!-- Cart -->
 
+    <section class="cart">
 
-    
+        <div class="cart-title">
+
+          <h2> My cart </h2>
+
+          <button onclick="closeCart()" class="cross-cart">X</button>
+
+        </div>
+
+
+        <div class="cart-list">
+
+            <p class="list-num"> Items </p>
+
+
+        </div>
+
+
+        <div class="cart-checkout">
+
+            <div class="total">
+
+                <p class="total-total"> Total : </p>
+                <p class="total-price"> 0€ </p>
+                
+            </div>
+
+            <button class="button-checkout-pushable" role="button">
+            <span class="button-checkout-shadow"></span>
+            <span class="button-checkout-edge"></span>
+            <span class="button-checkout-front text">
+                Checkout
+            </span>
+            </button>
+
+
+        </div>
+
+    </section>
+
+    <script src="assets/script/cartAddingElements.js"></script>
+    <script src="assets/script/burgerClass.js"></script>
 </body>
+
 </html>
