@@ -62,3 +62,39 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px){
+    .cards {
+        gap: 6vw;
+    }
+
+    .cards__wrapBurger{
+        width:26vw;
+        &__white{
+            padding:20px 25px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cards {
+        gap: 1vw;
+    }
+
+    .cards__wrapBurger{
+        width:21vw;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: $quickgrey; 
+    }
+
+    .cards__wrapBurger{
+        background-color: $quickblack;
+        color: $quickwhite;
+        box-shadow: 5px 5px 10px 2px $quickwhite;
+    }
+}
