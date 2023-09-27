@@ -1,26 +1,27 @@
 
 .container-shopping-cart{
 
-margin-left: 80%;
-// z-index: 3;
-position: fixed;
-bottom: 0;
-// // visibility: hidden;
+position: relative;
+height: 100vh;
 
 }
 
 .notif-shopping-cart{
 
-    border: 1px solid black;
+    border: 7px solid black;
     color: white;
     background-color: #111;
     filter: opacity(0.8);
     border-radius: 25px;
    text-align: center;
-   font-size: 10px; 
-   z-index: 10;
-   width: 15px;
-   margin-left: 65%; 
+   font-size: 12px; 
+   z-index: 9999;
+   width: 25px;
+  //  height: 25px;
+   position: fixed;
+  bottom: 80px; 
+  right: 22px; 
+  
 
 }
 
@@ -28,86 +29,56 @@ bottom: 0;
 
     background-color: red;
     color: white;
-    border: 1px solid white;
+    border: 7px solid red;
     transition: opacity 0.3s ease-in-out;
+   
 }
 
 
 
  .shopping-cart-img{
 
-    height: 25px;
-    width: 25px;
-    // filter: brightness(2);
+    height: 60px;
+    width: 60px;
+    filter: brightness(2);
+    
+   
     
     
   
  }
 
- .shopping-cart{
-
-    // position: fixed;
-    bottom: 0;
-    padding: 0.6em 2em;
+.shopping-cart {
+  --c: #fff;
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #004dff;
+  color: #0000;
   border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: red;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 9990; 
+  border-radius: 50%;
+  width: 80px; 
+  height: 80px; 
   cursor: pointer;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin-left: 20px;
-  padding-left: 2%;
-  padding-right: 2.5%;
- }
-
- .shopping-cart:before{
-
-    content: "";
-  background: linear-gradient(
-    45deg,
-    #c8102e,
-    white,
-
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: 1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
- }
- 
- .shopping-cart:after {
-    z-index: 2;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: white;
-    right: 0;
-    top: 0;
-    border-radius: 10px;
-  }
-
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
 }
 
+.shopping-cart:hover,
+.shopping-cart:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+  background-color: red;
+}
+
+.shopping-cart:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}

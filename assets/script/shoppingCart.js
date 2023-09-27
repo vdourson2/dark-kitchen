@@ -1,26 +1,28 @@
-function openCart(params) {
 
-    document.get
+let sectioncart = document.querySelector(".cart");
+
+let containershoppingcart = document.querySelector(".container-shopping-cart");
 
 
+function openCart() {
+
+sectioncart.style.display = "block";
+
+console.log(sectioncart);
+
+//  alert("test");
+
+containershoppingcart.style.display = "none";
 
 
-    
+  
 }
 
 function closeCart(){
 
+    
+    sectioncart.style.display = "none";
 
-
+    containershoppingcart.style.display = "block";
 
 }
-function setUp() {
-    document.getElementById("menu").onclick = setMenu;
-}
-
-function setMenu() {
-    var menuBox = document.getElementById("menu-box");
-    menuBox.className = "menuBox";   
-}
-
-setUp();
