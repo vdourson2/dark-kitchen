@@ -3022,8 +3022,12 @@ to layouts.
 }
 .total {
   color: black;
+  font-family: "poppins";
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .total .total-total {
   font-size: medium;
@@ -3037,6 +3041,7 @@ to layouts.
   border: none;
   background: transparent;
   padding: 0;
+  margin-left: 65%;
   cursor: pointer;
   outline-offset: 4px;
   transition: filter 250ms;
@@ -3111,6 +3116,22 @@ to layouts.
   outline: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .button-checkout-pushable {
+    margin-left: 82%;
+  }
+  .total {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .button-checkout-pushable {
+    margin-left: 86.5%;
+  }
+  .total {
+    font-size: 24px;
+  }
+}
 .container-shopping-cart {
   position: relative;
   height: 100vh;
