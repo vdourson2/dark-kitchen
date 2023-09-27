@@ -3134,6 +3134,7 @@ to layouts.
 }
 .cards__wrapBurger__wrapPrice__add:hover {
   cursor: pointer;
+  scale: 1.05;
 }
 
 @media only screen and (min-width: 768px) {
