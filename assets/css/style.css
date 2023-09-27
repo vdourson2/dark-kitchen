@@ -3076,6 +3076,19 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .zoom {
+    scale: 1;
+    position: static;
+    left: 0;
+    transform: translateX(0);
+  }
+  .zoom .cards__wrapBurger__description {
+    font-size: 16px;
+  }
+  .zoom .cards__wrapBurger__white {
+    height: 220px;
+    padding: 20px 25px;
+  }
   .cards {
     gap: 6vw;
   }

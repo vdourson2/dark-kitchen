@@ -86,6 +86,22 @@
 }
 
 @media only screen and (min-width: $screenTablet){
+    .zoom{
+        scale : 1;
+        position:static;
+        left:0;
+        transform: translateX(0);
+        .cards__wrapBurger{
+            &__description {
+                font-size: 16px;
+            }
+            &__white{
+                height:220px;
+                padding:20px 25px;
+            }
+        }
+    }
+
     .cards {
         gap: 6vw;
     }
