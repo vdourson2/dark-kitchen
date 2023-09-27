@@ -1,0 +1,15 @@
+{
+  "name": "dark-kitchen",
+  "version": "1.0.0",
+  "description": "Becode exercise : building a Dark Kitchen online delivery service",
+  "main": "index.js",
+  "scripts": {
+		"Watch": "npx tailwindcss -i ./css/style.css -o ./dist/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
