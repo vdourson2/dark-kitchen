@@ -14,11 +14,11 @@ $quickblack: #2f2f2f;
 // Spacing
 $pad: 1em;
 
-// Breakpoints
-$smallBreakpoint : 600px;
-$largeBreakpoint : 1080px;
-
 // Font Sizing
 $baseFontSize      : 16px;
 $baseLineHeight    : 1.5;
 $headingLineHeight : 1.2;
+
+//Media Queries
+$screenTablet : 768px;
+$screenDesktop : 1024px;
