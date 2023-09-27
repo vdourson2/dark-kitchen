@@ -3086,4 +3086,14 @@ to layouts.
   .cards__wrapBurger {
     width: 21vw;
   }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #cbcbcb;
+  }
+  .cards__wrapBurger {
+    background-color: #2f2f2f;
+    color: #f4f4f4;
+    box-shadow: 5px 5px 10px 2px #f4f4f4;
+  }
 }/*# sourceMappingURL=style.css.map */
