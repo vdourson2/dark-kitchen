@@ -19,7 +19,7 @@
         gap: 15px;
         overflow-y: scroll;
         height: 90%;
-        margin-top: 10px;
+        margin-top: 5px;
 
         .cart-card
         {
@@ -46,7 +46,6 @@
             {
                 margin: 0;
                 font-family: $poppins;
-                justify-self: end;
             }
 
             .cart-modify
@@ -85,17 +84,17 @@
 
 @media only screen and (max-width: 768px)
 {
-    @include cartCardMedia(16px, 14px, 50px, 15px);
+    @include cartCardMedia(16px, 12px, 50px, 15px);
 }
 
 @media only screen and (min-width: 768px)
 {
-    @include cartCardMedia(22px, 18px, 80px, 18px);
+    @include cartCardMedia(22px, 16px, 80px, 18px);
 }
 
 @media only screen and (min-width: 1024px) 
 {
-    @include cartCardMedia(26px, 20px, 120px, 22px);
+    @include cartCardMedia(25px, 20px, 100px, 22px);
 }
 
 @media (prefers-color-scheme: light) 

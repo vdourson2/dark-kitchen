@@ -5,13 +5,11 @@ to layouts.
 */
 //Import layout files
 
+@import 'body.scss';
 @import 'category';
-@import 'cart-title';
 @import 'cards.scss';
 @import 'header';
 @import 'cart';
 @import 'cart-checkout';
 @import 'shopping-cart';
 @import 'cart-cards';
-
-@import 'cards.scss';

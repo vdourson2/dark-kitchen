@@ -2912,6 +2912,10 @@ This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
 to layouts.
 */
+body {
+  background-color: #f4f4f4;
+}
+
 .category {
   width: 100%;
   display: flex;
@@ -3002,13 +3006,14 @@ to layouts.
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10vw;
+  gap: 6vw;
 }
 
 .cards__wrapBurger {
-  width: 40vw;
+  width: 42vw;
   color: #2f2f2f;
-  box-shadow: 5px 5px 10px 2px #cbcbcb;
+  background-color: #f4f4f4;
+  box-shadow: 6px 6px 20px #cbcbcb;
   border-radius: 10px;
 }
 .cards__wrapBurger__black {
@@ -3024,8 +3029,8 @@ to layouts.
   border-radius: 10px;
 }
 .cards__wrapBurger__white {
-  padding: 20px 10px;
-  height: 250px;
+  padding: 20px 10px 10px 10px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -3037,6 +3042,7 @@ to layouts.
 }
 .cards__wrapBurger__description {
   font-family: "poppins";
+  font-size: 15px;
 }
 .cards__wrapBurger__wrapPrice {
   display: flex;
@@ -3414,7 +3420,7 @@ to layouts.
   gap: 15px;
   overflow-y: scroll;
   height: 90%;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .cart-list .cart-cards-container .cart-card {
   display: grid;
@@ -3435,7 +3441,6 @@ to layouts.
 .cart-list .cart-cards-container .cart-card p {
   margin: 0;
   font-family: "poppins";
-  justify-self: end;
 }
 .cart-list .cart-cards-container .cart-card .cart-modify {
   display: flex;
@@ -3474,10 +3479,10 @@ to layouts.
     font-size: 16px;
   }
   .cart-list .cart-card p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .cart-list .cart-card .cart-modify {
-    font-size: 14px;
+    font-size: 12px;
   }
   .cart-list .cart-card .cart-modify .cart-removeButton {
     font-size: 20px;
@@ -3497,10 +3502,10 @@ to layouts.
     font-size: 22px;
   }
   .cart-list .cart-card p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .cart-list .cart-card .cart-modify {
-    font-size: 18px;
+    font-size: 16px;
   }
   .cart-list .cart-card .cart-modify .cart-removeButton {
     font-size: 23px;
@@ -3511,13 +3516,13 @@ to layouts.
 }
 @media only screen and (min-width: 1024px) {
   .cart-list p {
-    font-size: 26px;
+    font-size: 25px;
   }
   .cart-list .cart-card img {
     max-height: 100px;
   }
   .cart-list .cart-card h3 {
-    font-size: 26px;
+    font-size: 25px;
   }
   .cart-list .cart-card p {
     font-size: 20px;
@@ -3572,96 +3577,5 @@ to layouts.
   }
   .cart-card .cart-modify .cart-addButton:hover {
     color: #f4f4f4;
-  }
-}
-.cards {
-  width: 90vw;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10vw;
-}
-
-.cards__wrapBurger {
-  width: 40vw;
-  color: #2f2f2f;
-  box-shadow: 5px 5px 10px 2px #cbcbcb;
-  border-radius: 10px;
-}
-.cards__wrapBurger__black {
-  width: 100%;
-  height: 85px;
-  background-color: #2f2f2f;
-  border-radius: 10px 10px 0 0;
-}
-.cards__wrapBurger__illustration {
-  display: block;
-  width: 90px;
-  margin: -50px auto 0px auto;
-  border-radius: 10px;
-}
-.cards__wrapBurger__white {
-  padding: 20px 10px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.cards__wrapBurger__burgerName {
-  font-family: "roboto";
-  font-size: 20px;
-  font-weight: bold;
-}
-.cards__wrapBurger__description {
-  font-family: "poppins";
-}
-.cards__wrapBurger__wrapPrice {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.cards__wrapBurger__wrapPrice__price {
-  font-family: "poppins";
-  font-weight: bold;
-}
-.cards__wrapBurger__wrapPrice__add {
-  background-color: #c8102e;
-  color: #f4f4f4;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  width: 24px;
-  border-radius: 12px;
-}
-.cards__wrapBurger__wrapPrice__add:hover {
-  cursor: pointer;
-  scale: 1.05;
-}
-
-@media only screen and (min-width: 768px) {
-  .cards {
-    gap: 6vw;
-  }
-  .cards__wrapBurger {
-    width: 26vw;
-  }
-  .cards__wrapBurger__white {
-    padding: 20px 25px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .cards {
-    gap: 1vw;
-  }
-  .cards__wrapBurger {
-    width: 21vw;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .cards__wrapBurger {
-    background-color: #2f2f2f;
-    color: #f4f4f4;
-    box-shadow: 5px 5px 10px 2px #f4f4f4;
   }
 }/*# sourceMappingURL=style.css.map */

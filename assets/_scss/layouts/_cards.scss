@@ -5,13 +5,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap:10vw;
+    gap:6vw;
 }
 
 .cards__wrapBurger{
-    width:40vw;
+    width:42vw;
     color:$quickblack;
-    box-shadow: 5px 5px 10px 2px $quickgrey;
+    background-color: $quickwhite;
+    box-shadow: 6px 6px 20px $quickgrey;
     border-radius: 10px;
     &__black{
         width:100%;
@@ -26,8 +27,8 @@
         border-radius:10px;
     }
     &__white{
-        padding:20px 10px;
-        height:250px;
+        padding:20px 10px 10px 10px;
+        height:200px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -39,6 +40,7 @@
     }
     &__description {
         font-family: $poppins;
+        font-size:15px
     }
     &__wrapPrice {
         display: flex;
