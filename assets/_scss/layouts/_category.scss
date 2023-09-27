@@ -1,3 +1,27 @@
+
+@media (prefers-color-scheme: dark) {
+
+    .category {
+        background-color: $quickgrey;
+    }
+    .category__title {
+        color: $quickwhite;
+    }
+
+    .category__list__item {
+        color:$quickgrey;
+    }
+
+    .category__list__item {
+
+        
+        box-shadow: 3px 4px 11px -4px $quickwhite;
+        -webkit-box-shadow: 3px 4px 11px -4px $quickwhite;
+        -moz-box-shadow: 3px 4px 11px -4px $quickwhite;
+        
+    }
+
+
 .category {
     width: 375px;
     display:flex;
@@ -54,7 +78,12 @@
 .category__list__item:hover { /* IE 9 */ /* Safari 3-8 */
     transform: scale(1.05);
   }
+
+.category__list__item:active { /* IE 9 */ /* Safari 3-8 */
+    transform: scale(0.98);
+  }
   
 
+}
 
 
