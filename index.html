@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark kitchen</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <script defer src="assets/script/burgerClass.js"></script>
     <script defer src="assets/script/cards.js"></script>
     <script defer src="assets/script/main.js"></script>
+    <script defer src="assets/script/category.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -31,12 +32,12 @@
     <!-- Category -->
     <nav class="category">
         <h2 class="category__title">Categories</h2>
-        <ul class="category__list">
-            <li class="category__list__item">All</li>
-            <li class="category__list__item">Beef</li>
-            <li class="category__list__item">Chicken</li>
-            <li class="category__list__item">Fish</li>
-            <li class="category__list__item">Veggies</li>
+        <ul id="category__list">
+            <li class="category__list__item" data-category="all"><link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'><span class="ec ec-hamburger"></span> All</li>
+            <li class="category__list__item" data-category="beef"><link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'><span class="ec ec-cow"></span> Beef</li>
+            <li class="category__list__item" data-category="chicken"><link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'><span class="ec ec-chicken"></span> Chicken</li>
+            <li class="category__list__item" data-category="fish"><link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'><span class="ec ec-fish"></span> Fish</li>
+            <li class="category__list__item" data-category="veggie"><link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'><span class="ec ec-seedling"></span> Veggie</li>
         </ul>
     </nav>
 
