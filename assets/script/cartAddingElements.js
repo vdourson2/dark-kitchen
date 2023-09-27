@@ -1,4 +1,7 @@
-let cartCardsContainer = document.querySelector(".cart-list");
+let cartCardsList = document.querySelector(".cart-list");
+let cartCardsContainer = document.createElement("div");
+cartCardsContainer.classList.add("cart-cards-container");
+cartCardsList.appendChild(cartCardsContainer);
 let totalPrice = document.querySelector(".total-price");
 let totalItems = document.querySelector(".list-num");
 let cartList = [];
@@ -91,6 +94,7 @@ function updateCart(burger, x)
         //selectedBurgers.findIndex(burger);
         //selectedBurgers.splice();
         updateTotal(burger.price * x)
+        updateItemsNum(x);
         return;
     }
 

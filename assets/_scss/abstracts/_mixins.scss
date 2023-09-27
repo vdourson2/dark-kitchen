@@ -1,1 +1,81 @@
 // Mixins
+
+// Mixin for cart cards media querrys
+@mixin cartCardMedia($sizeTitles, $sizeText, $sizeImg, $sizeButton) 
+{
+    .cart-list
+    {
+        p
+        {
+            font-size: $sizeTitles;
+        }
+
+        .cart-card
+        {
+            img 
+            {
+                max-height: $sizeImg;
+            }
+
+            h3 
+            {
+                font-size: $sizeTitles;
+            }
+
+            p 
+            {
+                font-size: $sizeText;
+            }
+
+            .cart-modify
+            {
+                font-size: $sizeText;
+
+                .cart-removeButton
+                {
+                    font-size: $sizeButton + 5px;
+                }
+
+                .cart-addButton
+                {
+                    font-size: $sizeButton;
+                }
+            }
+        }
+    }
+}
+
+// Mixin for cart cards dark mode
+@mixin cartCardsDarkMode($colorText, $colorBackground)
+{
+    .cart-card
+    {
+        background-color: $colorBackground;
+        color: $colorText;
+
+        .cart-modify
+        {
+            color: $colorBackground;
+
+            .cart-removeButton
+            {
+                color: $colorBackground;
+            }
+
+            .cart-removeButton:hover
+            {
+                color: $colorText;
+            }
+
+            .cart-addButton
+            {
+                color: $colorBackground;
+            }
+
+            .cart-addButton:hover
+            {
+                color: $colorText;
+            }
+        }
+    }
+}
