@@ -2,19 +2,16 @@
 @media (prefers-color-scheme: dark) {
 
     .category {
-        background-color: $quickgrey;
+        background-color: $quickblack;
     }
     .category__title {
         color: $quickwhite;
     }
 
+    
     .category__list__item {
+
         color:$quickgrey;
-    }
-
-    .category__list__item {
-
-        
         box-shadow: 3px 4px 11px -4px $quickwhite;
         -webkit-box-shadow: 3px 4px 11px -4px $quickwhite;
         -moz-box-shadow: 3px 4px 11px -4px $quickwhite;
@@ -37,6 +34,7 @@
     font-size: 12px;
     margin-top: 5px;
     align-items: center;
+    color:$quickblack;
     
 
 }
@@ -59,7 +57,7 @@
 
     background:$quickred;
     color:$quickwhite;
-    width: 70px;
+    width: 67px;
     height: 30px;
     margin-right: auto;
     margin-left: auto;
@@ -68,6 +66,7 @@
     font-size: 10px;
     font-weight: 900;
     padding: 5px;
+    padding-top: 7px;
     border-radius: 5px;
     box-shadow: 3px 4px 11px -4px rgba(0,0,0,1);
     -webkit-box-shadow: 3px 4px 11px -4px rgba(0,0,0,1);
