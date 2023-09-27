@@ -31,6 +31,7 @@ position: relative;
     color: white;
     border: 7px solid red;
     transition: opacity 0.3s ease-in-out;
+    transform: scale(1.2);
    
 }
 
@@ -51,7 +52,7 @@ position: relative;
 .shopping-cart {
   --c: #fff;
   background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
-    #004dff;
+    $quickred;
   color: #0000;
   border: none;
   transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
@@ -73,15 +74,23 @@ position: relative;
 .shopping-cart:focus-visible {
   --_p: 0%;
   --_i: 1;
-  background-color: red;
+  background-color: $quickred;
+  transform: scale(1.1);
+ 
+  
 }
 
 .shopping-cart:active {
   text-shadow: none;
   color: var(--c);
   box-shadow: inset 0 0 9e9q #0005;
-  transition: 0s;
+  transition: 0s; 
+  
+
+
 }
+
+
 
 
 
