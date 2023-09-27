@@ -9,6 +9,7 @@
     <script defer src="assets/script/cards.js"></script>
     <script defer src="assets/script/main.js"></script>
     <script defer src="assets/script/shoppingCart.js"> </script>
+    <script defer src="assets/script/cartAddingElements.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -69,7 +70,7 @@
 
           <h2> My cart </h2>
 
-          <button onclick="closeCart()" class="cross-cart"></button>
+          <button onclick="closeCart()" class="cross-cart">X</button>
 
         </div>
 
@@ -86,8 +87,8 @@
 
             <div class="total">
 
-                <p> Total </p>
-                <p> 9.49€ </p>
+                <p class=".total-total"> Total </p>
+                <p class=".total-price"> 9.49€ </p>
                 
             </div>
 
@@ -98,9 +99,7 @@
 
     </section>
 
-    <script src="assets/script/burgerClass.js"></script>
-    <script src="assets/script/cartAddingElements.js"></script>
-    <script src="assets/script/main.js"></script>
+    
 </body>
 
 </html>

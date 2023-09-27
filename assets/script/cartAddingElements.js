@@ -134,11 +134,11 @@ function updateItemsNum(x)
 }
 
 addElementToCart(chicken1);
-addElementToCart(chicken2);
-addElementToCart(chicken1);
-addElementToCart(chicken2);
-addElementToCart(chicken1);
-addElementToCart(chicken3);
-addElementToCart(chicken4);
+// addElementToCart(chicken2);
+// addElementToCart(chicken1);
+// addElementToCart(chicken2);
+// addElementToCart(chicken1);
+// addElementToCart(chicken3);
+// addElementToCart(chicken4);
 
 //updateCart(chicken1, 90);
