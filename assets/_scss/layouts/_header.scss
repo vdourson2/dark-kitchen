@@ -38,7 +38,7 @@
     font-family: $roboto;
     color: $quickwhite;
     text-align: center;
-    font-size: 36px;
+    font-size: 46px;
 
 }
 
@@ -73,7 +73,7 @@
 @media only screen and (min-width:375px) and (max-width:768px) {
 
     .container_title {
-        font-size: 48px;
+        font-size: 56px;
     }
 
 
@@ -98,5 +98,14 @@
     color: $quickwhite;
     text-align: center;
 }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+    .container_title {
+        font-size: 56px;
+    }
+
 
 }

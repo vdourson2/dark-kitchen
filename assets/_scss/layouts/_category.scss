@@ -1,6 +1,7 @@
 
 @media (prefers-color-scheme: dark) {
 
+
     .category {
         background-color: $quickblack;
     }
@@ -17,6 +18,7 @@
         -moz-box-shadow: 3px 4px 11px -4px $quickwhite;
         
     }
+}
 
 
 .category {
@@ -63,13 +65,13 @@
 
     background:$quickred;
     color:$quickwhite;
-    width: 40px;
+    width: 60px;
     height: 20px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     font-family: $poppins;
-    font-size: 6px;
+    font-size: 8px;
     font-weight: 900;
     padding-top: 7px;
     border-radius: 5px;
@@ -87,19 +89,18 @@
     transform: scale(0.98);
   }
   
-}
+
 
 
 @media only screen and (min-width:375px) and (max-width:768px) {
 
     .category__list__item {
 
-        width: 80px;
+        width: 75px;
         height: 20px;
         font-size: 12px;
         padding-top: 5px;
         
-       
         
     }
 
@@ -112,5 +113,6 @@
     #category__list {
         margin-top: 5px;
     }
-}
 
+
+}
