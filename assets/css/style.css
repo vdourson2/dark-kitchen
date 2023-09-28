@@ -2816,11 +2816,11 @@ helpers or functions. They have no direct output.
 */
 @font-face {
   font-family: "roboto";
-  src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+  src: url("assets/fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "poppins";
-  src: url("/assets/fonts/Poppins/Poppins-Regular.ttf");
+  src: url("assets/fonts/Poppins/Poppins-Regular.ttf");
 }
 /*
 This file is used to contain all base imports.
